@@ -1251,6 +1251,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="io/openlineage/server/OpenLineage.StaticDataset.html#getAdditionalProperties()" class="member-name-link">getAdditionalProperties()</a> - Method in class io.openlineage.server.<a href="io/openlineage/server/OpenLineage.StaticDataset.html" title="class in io.openlineage.server">OpenLineage.StaticDataset</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="io/openlineage/client/Environment.html#getAllEnvironmentVariables()" class="member-name-link">getAllEnvironmentVariables()</a> - Static method in class io.openlineage.client.<a href="io/openlineage/client/Environment.html" title="class in io.openlineage.client">Environment</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="io/openlineage/client/transports/ApiKeyTokenProvider.html#getApiKey()" class="member-name-link">getApiKey()</a> - Method in class io.openlineage.client.transports.<a href="io/openlineage/client/transports/ApiKeyTokenProvider.html" title="class in io.openlineage.client.transports">ApiKeyTokenProvider</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="io/openlineage/client/OpenLineage.GcpDataprocSparkRunFacet.html#getAppId()" class="member-name-link">getAppId()</a> - Method in class io.openlineage.client.<a href="io/openlineage/client/OpenLineage.GcpDataprocSparkRunFacet.html" title="class in io.openlineage.client">OpenLineage.GcpDataprocSparkRunFacet</a></dt>
@@ -1865,6 +1867,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="io/openlineage/client/transports/CompositeConfig.html#getTransports()" class="member-name-link">getTransports()</a> - Method in class io.openlineage.client.transports.<a href="io/openlineage/client/transports/CompositeConfig.html" title="class in io.openlineage.client.transports">CompositeConfig</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="io/openlineage/client/transports/CompositeTransport.html#getTransports()" class="member-name-link">getTransports()</a> - Method in class io.openlineage.client.transports.<a href="io/openlineage/client/transports/CompositeTransport.html" title="class in io.openlineage.client.transports">CompositeTransport</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="io/openlineage/client/circuitBreaker/CircuitBreakerBuilder.html#getType()" class="member-name-link">getType()</a> - Method in interface io.openlineage.client.circuitBreaker.<a href="io/openlineage/client/circuitBreaker/CircuitBreakerBuilder.html" title="interface in io.openlineage.client.circuitBreaker">CircuitBreakerBuilder</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="io/openlineage/client/circuitBreaker/JavaRuntimeCircuitBreakerBuilder.html#getType()" class="member-name-link">getType()</a> - Method in class io.openlineage.client.circuitBreaker.<a href="io/openlineage/client/circuitBreaker/JavaRuntimeCircuitBreakerBuilder.html" title="class in io.openlineage.client.circuitBreaker">JavaRuntimeCircuitBreakerBuilder</a></dt>
@@ -2230,6 +2234,11 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="io/openlineage/client/dataset/namespace/resolver/DatasetNamespaceResolverLoader.html#loadDatasetNamespaceResolverTypeByConfigClass(java.lang.Class)" class="member-name-link">loadDatasetNamespaceResolverTypeByConfigClass(Class)</a> - Static method in class io.openlineage.client.dataset.namespace.resolver.<a href="io/openlineage/client/dataset/namespace/resolver/DatasetNamespaceResolverLoader.html" title="class in io.openlineage.client.dataset.namespace.resolver">DatasetNamespaceResolverLoader</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="io/openlineage/client/OpenLineageClientUtils.html#loadOpenLineageConfigFromEnvVars(com.fasterxml.jackson.core.type.TypeReference)" class="member-name-link">loadOpenLineageConfigFromEnvVars(TypeReference&lt;T&gt;)</a> - Static method in class io.openlineage.client.<a href="io/openlineage/client/OpenLineageClientUtils.html" title="class in io.openlineage.client">OpenLineageClientUtils</a></dt>
+<dd>
+<div class="block">This method reads the OpenLineage configuration from environment variables, converts it to a
+ JSON string, and then parses the JSON string into an instance of the specified <a href="io/openlineage/client/OpenLineageConfig.html" title="class in io.openlineage.client"><code>OpenLineageConfig</code></a> subclass.</div>
+</dd>
 <dt><a href="io/openlineage/client/OpenLineageClientUtils.html#loadOpenLineageConfigJson(java.io.InputStream,com.fasterxml.jackson.core.type.TypeReference)" class="member-name-link">loadOpenLineageConfigJson(InputStream, TypeReference&lt;T&gt;)</a> - Static method in class io.openlineage.client.<a href="io/openlineage/client/OpenLineageClientUtils.html" title="class in io.openlineage.client">OpenLineageClientUtils</a></dt>
 <dd>
 <div class="block">Loads and parses OpenLineage JSON configuration from an <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/InputStream.html" title="class or interface in java.io" class="external-link"><code>InputStream</code></a>.</div>
@@ -3567,6 +3576,12 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="io/openlineage/client/OpenLineageConfig.html#%3Cinit%3E(io.openlineage.client.transports.TransportConfig,io.openlineage.client.transports.FacetsConfig,io.openlineage.client.dataset.DatasetConfig,io.openlineage.client.circuitBreaker.CircuitBreakerConfig,java.util.Map)" class="member-name-link">OpenLineageConfig(TransportConfig, FacetsConfig, DatasetConfig, CircuitBreakerConfig, Map&lt;String, Object&gt;)</a> - Constructor for class io.openlineage.client.<a href="io/openlineage/client/OpenLineageConfig.html" title="class in io.openlineage.client">OpenLineageConfig</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="io/openlineage/client/utils/OpenLineageEnvParser.html" class="type-name-link" title="class in io.openlineage.client.utils">OpenLineageEnvParser</a> - Class in <a href="io/openlineage/client/utils/package-summary.html">io.openlineage.client.utils</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="io/openlineage/client/utils/OpenLineageEnvParser.html#%3Cinit%3E()" class="member-name-link">OpenLineageEnvParser()</a> - Constructor for class io.openlineage.client.utils.<a href="io/openlineage/client/utils/OpenLineageEnvParser.html" title="class in io.openlineage.client.utils">OpenLineageEnvParser</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="io/openlineage/client/utils/OpenLineageEnvParser.html#OpenLineageEnvVarsExist()" class="member-name-link">OpenLineageEnvVarsExist()</a> - Static method in class io.openlineage.client.utils.<a href="io/openlineage/client/utils/OpenLineageEnvParser.html" title="class in io.openlineage.client.utils">OpenLineageEnvParser</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="io/openlineage/client/utils/jdbc/OracleJdbcExtractor.html" class="type-name-link" title="class in io.openlineage.client.utils.jdbc">OracleJdbcExtractor</a> - Class in <a href="io/openlineage/client/utils/jdbc/package-summary.html">io.openlineage.client.utils.jdbc</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="io/openlineage/client/utils/jdbc/OracleJdbcExtractor.html#%3Cinit%3E()" class="member-name-link">OracleJdbcExtractor()</a> - Constructor for class io.openlineage.client.utils.jdbc.<a href="io/openlineage/client/utils/jdbc/OracleJdbcExtractor.html" title="class in io.openlineage.client.utils.jdbc">OracleJdbcExtractor</a></dt>
@@ -3632,6 +3647,11 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="io/openlineage/client/OpenLineage.ParentRunFacetRunBuilder.html#%3Cinit%3E()" class="member-name-link">ParentRunFacetRunBuilder()</a> - Constructor for class io.openlineage.client.<a href="io/openlineage/client/OpenLineage.ParentRunFacetRunBuilder.html" title="class in io.openlineage.client">OpenLineage.ParentRunFacetRunBuilder</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="io/openlineage/client/utils/OpenLineageEnvParser.html#parseAllOpenLineageEnvVars()" class="member-name-link">parseAllOpenLineageEnvVars()</a> - Static method in class io.openlineage.client.utils.<a href="io/openlineage/client/utils/OpenLineageEnvParser.html" title="class in io.openlineage.client.utils">OpenLineageEnvParser</a></dt>
+<dd>
+<div class="block">Parses all environment variables starting with OPENLINEAGE__ into a single nested JSON
+ structure.</div>
+</dd>
 <dt><a href="io/openlineage/client/metrics/MicrometerProvider.html#parseMeterRegistryConfig(java.util.Map)" class="member-name-link">parseMeterRegistryConfig(Map&lt;String, Object&gt;)</a> - Static method in class io.openlineage.client.metrics.<a href="io/openlineage/client/metrics/MicrometerProvider.html" title="class in io.openlineage.client.metrics">MicrometerProvider</a></dt>
 <dd>
 <div class="block">Parses the configuration map to create an optional MeterRegistry.</div>
