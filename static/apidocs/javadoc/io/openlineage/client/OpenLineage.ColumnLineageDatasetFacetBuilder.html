@@ -121,12 +121,15 @@ implements <a href="OpenLineage.Builder.html" title="interface in io.openlineage
 <div class="block">build an instance of ColumnLineageDatasetFacet from the fields set in the builder</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OpenLineage.ColumnLineageDatasetFacetBuilder.html" title="class in io.openlineage.client">OpenLineage.ColumnLineageDatasetFacetBuilder</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#fields(io.openlineage.client.OpenLineage.ColumnLineageDatasetFacetFields)" class="member-name-link">fields</a><wbr>(<a href="OpenLineage.ColumnLineageDatasetFacetFields.html" title="class in io.openlineage.client">OpenLineage.ColumnLineageDatasetFacetFields</a>&nbsp;fields)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#dataset(java.util.List)" class="member-name-link">dataset</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="OpenLineage.InputField.html" title="class in io.openlineage.client">OpenLineage.InputField</a>&gt;&nbsp;dataset)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OpenLineage.ColumnLineageDatasetFacetBuilder.html" title="class in io.openlineage.client">OpenLineage.ColumnLineageDatasetFacetBuilder</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#put(java.lang.String,java.lang.Object)" class="member-name-link">put</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#fields(io.openlineage.client.OpenLineage.ColumnLineageDatasetFacetFields)" class="member-name-link">fields</a><wbr>(<a href="OpenLineage.ColumnLineageDatasetFacetFields.html" title="class in io.openlineage.client">OpenLineage.ColumnLineageDatasetFacetFields</a>&nbsp;fields)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OpenLineage.ColumnLineageDatasetFacetBuilder.html" title="class in io.openlineage.client">OpenLineage.ColumnLineageDatasetFacetBuilder</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#put(java.lang.String,java.lang.Object)" class="member-name-link">put</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;value)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">add additional properties</div>
 </div>
 </div>
@@ -167,6 +170,18 @@ implements <a href="OpenLineage.Builder.html" title="interface in io.openlineage
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>fields</code> - Column level lineage that maps output fields into input fields used to evaluate them.</dd>
+<dt>Returns:</dt>
+<dd>this</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="dataset(java.util.List)">
+<h3>dataset</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.ColumnLineageDatasetFacetBuilder.html" title="class in io.openlineage.client">OpenLineage.ColumnLineageDatasetFacetBuilder</a></span>&nbsp;<span class="element-name">dataset</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="OpenLineage.InputField.html" title="class in io.openlineage.client">OpenLineage.InputField</a>&gt;&nbsp;dataset)</span></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>dataset</code> - Column level lineage that affects the whole dataset. This includes filtering, sorting, grouping (aggregates), joining, window functions, etc.</dd>
 <dt>Returns:</dt>
 <dd>this</dd>
 </dl>
