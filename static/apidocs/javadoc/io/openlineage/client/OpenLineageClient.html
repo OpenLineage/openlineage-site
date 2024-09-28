@@ -75,9 +75,14 @@ loadScripts(document, 'script');</script>
 <div class="inheritance">io.openlineage.client.OpenLineageClient</div>
 </div>
 <section class="class-description" id="class-description">
+<dl class="notes">
+<dt>All Implemented Interfaces:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/AutoCloseable.html" title="class or interface in java.lang" class="external-link">AutoCloseable</a></code></dd>
+</dl>
 <hr>
 <div class="type-signature"><span class="modifiers">public final class </span><span class="element-name type-name-label">OpenLineageClient</span>
-<span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>
+implements <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/AutoCloseable.html" title="class or interface in java.lang" class="external-link">AutoCloseable</a></span></div>
 <div class="block">HTTP client used to emit <a href="OpenLineage.RunEvent.html" title="class in io.openlineage.client"><code>OpenLineage.RunEvent</code></a>s to HTTP backend.</div>
 </section>
 <section class="summary">
@@ -139,23 +144,26 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#builder()" class="member-name-link">builder</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#emit(io.openlineage.client.OpenLineage.DatasetEvent)" class="member-name-link">emit</a><wbr>(<a href="OpenLineage.DatasetEvent.html" title="class in io.openlineage.client">OpenLineage.DatasetEvent</a>&nbsp;datasetEvent)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#close()" class="member-name-link">close</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#emit(io.openlineage.client.OpenLineage.DatasetEvent)" class="member-name-link">emit</a><wbr>(<a href="OpenLineage.DatasetEvent.html" title="class in io.openlineage.client">OpenLineage.DatasetEvent</a>&nbsp;datasetEvent)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Emit the given dataset event to HTTP backend.</div>
 </div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#emit(io.openlineage.client.OpenLineage.JobEvent)" class="member-name-link">emit</a><wbr>(<a href="OpenLineage.JobEvent.html" title="class in io.openlineage.client">OpenLineage.JobEvent</a>&nbsp;jobEvent)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Emit the given run event to HTTP backend.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#emit(io.openlineage.client.OpenLineage.JobEvent)" class="member-name-link">emit</a><wbr>(<a href="OpenLineage.JobEvent.html" title="class in io.openlineage.client">OpenLineage.JobEvent</a>&nbsp;jobEvent)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#emit(io.openlineage.client.OpenLineage.RunEvent)" class="member-name-link">emit</a><wbr>(<a href="OpenLineage.RunEvent.html" title="class in io.openlineage.client">OpenLineage.RunEvent</a>&nbsp;runEvent)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Emit the given run event to HTTP backend.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#emit(io.openlineage.client.OpenLineage.RunEvent)" class="member-name-link">emit</a><wbr>(<a href="OpenLineage.RunEvent.html" title="class in io.openlineage.client">OpenLineage.RunEvent</a>&nbsp;runEvent)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Emit the given run event to HTTP backend.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#initializeMetrics()" class="member-name-link">initializeMetrics</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#initializeMetrics()" class="member-name-link">initializeMetrics</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -265,6 +273,19 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>an new <a href="OpenLineageClient.Builder.html" title="class in io.openlineage.client"><code>OpenLineageClient.Builder</code></a> object for building <a href="OpenLineageClient.html" title="class in io.openlineage.client"><code>OpenLineageClient</code></a>s.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="close()">
+<h3>close</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">close</span>()
+           throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Exception.html" title="class or interface in java.lang" class="external-link">Exception</a></span></div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/AutoCloseable.html#close()" title="class or interface in java.lang" class="external-link">close</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/AutoCloseable.html" title="class or interface in java.lang" class="external-link">AutoCloseable</a></code></dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Exception.html" title="class or interface in java.lang" class="external-link">Exception</a></code></dd>
 </dl>
 </section>
 </li>
