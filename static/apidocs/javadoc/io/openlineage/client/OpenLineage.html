@@ -1683,28 +1683,6 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="newDataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantiles()">
-<h3>newDataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantiles</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.DataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantiles.html" title="class in io.openlineage.client">OpenLineage.DataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantiles</a></span>&nbsp;<span class="element-name">newDataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantiles</span>()</div>
-<div class="block">Factory method for DataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantiles</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>DataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantiles</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="newDataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantilesBuilder()">
-<h3>newDataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantilesBuilder</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.DataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantilesBuilder.html" title="class in io.openlineage.client">OpenLineage.DataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantilesBuilder</a></span>&nbsp;<span class="element-name">newDataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantilesBuilder</span>()</div>
-<div class="block">Creates a builder for DataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantiles</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>a new builder for DataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantiles</dd>
-</dl>
-</section>
-</li>
-<li>
 <section class="detail" id="newExternalQueryRunFacet(java.lang.String,java.lang.String)">
 <h3>newExternalQueryRunFacet</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.ExternalQueryRunFacet.html" title="class in io.openlineage.client">OpenLineage.ExternalQueryRunFacet</a></span>&nbsp;<span class="element-name">newExternalQueryRunFacet</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;externalQueryId,
@@ -1727,6 +1705,28 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>a new builder for ExternalQueryRunFacet</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="newDataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantiles()">
+<h3>newDataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantiles</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.DataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantiles.html" title="class in io.openlineage.client">OpenLineage.DataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantiles</a></span>&nbsp;<span class="element-name">newDataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantiles</span>()</div>
+<div class="block">Factory method for DataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantiles</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>DataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantiles</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="newDataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantilesBuilder()">
+<h3>newDataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantilesBuilder</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.DataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantilesBuilder.html" title="class in io.openlineage.client">OpenLineage.DataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantilesBuilder</a></span>&nbsp;<span class="element-name">newDataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantilesBuilder</span>()</div>
+<div class="block">Creates a builder for DataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantiles</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a new builder for DataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantiles</dd>
 </dl>
 </section>
 </li>
@@ -1883,6 +1883,34 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
+<section class="detail" id="newExtractionErrorRunFacet(java.lang.Long,java.lang.Long,java.util.List)">
+<h3>newExtractionErrorRunFacet</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.ExtractionErrorRunFacet.html" title="class in io.openlineage.client">OpenLineage.ExtractionErrorRunFacet</a></span>&nbsp;<span class="element-name">newExtractionErrorRunFacet</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Long.html" title="class or interface in java.lang" class="external-link">Long</a>&nbsp;totalTasks,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Long.html" title="class or interface in java.lang" class="external-link">Long</a>&nbsp;failedTasks,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="OpenLineage.ExtractionErrorRunFacetErrors.html" title="class in io.openlineage.client">OpenLineage.ExtractionErrorRunFacetErrors</a>&gt;&nbsp;errors)</span></div>
+<div class="block">Factory method for ExtractionErrorRunFacet</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>totalTasks</code> - The number of distinguishable tasks in a run that were processed by OpenLineage, whether successfully or not. Those could be, for example, distinct SQL statements.</dd>
+<dd><code>failedTasks</code> - The number of distinguishable tasks in a run that were processed not successfully by OpenLineage. Those could be, for example, distinct SQL statements.</dd>
+<dd><code>errors</code> - the errors</dd>
+<dt>Returns:</dt>
+<dd>ExtractionErrorRunFacet</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="newExtractionErrorRunFacetBuilder()">
+<h3>newExtractionErrorRunFacetBuilder</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.ExtractionErrorRunFacetBuilder.html" title="class in io.openlineage.client">OpenLineage.ExtractionErrorRunFacetBuilder</a></span>&nbsp;<span class="element-name">newExtractionErrorRunFacetBuilder</span>()</div>
+<div class="block">Creates a builder for ExtractionErrorRunFacet</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a new builder for ExtractionErrorRunFacet</dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="newColumnLineageDatasetFacetFieldsAdditional(java.util.List,java.lang.String,java.lang.String)">
 <h3>newColumnLineageDatasetFacetFieldsAdditional</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.ColumnLineageDatasetFacetFieldsAdditional.html" title="class in io.openlineage.client">OpenLineage.ColumnLineageDatasetFacetFieldsAdditional</a></span>&nbsp;<span class="element-name">newColumnLineageDatasetFacetFieldsAdditional</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="OpenLineage.InputField.html" title="class in io.openlineage.client">OpenLineage.InputField</a>&gt;&nbsp;inputFields,
@@ -1933,34 +1961,6 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>a new builder for OwnershipDatasetFacetOwners</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="newExtractionErrorRunFacet(java.lang.Long,java.lang.Long,java.util.List)">
-<h3>newExtractionErrorRunFacet</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.ExtractionErrorRunFacet.html" title="class in io.openlineage.client">OpenLineage.ExtractionErrorRunFacet</a></span>&nbsp;<span class="element-name">newExtractionErrorRunFacet</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Long.html" title="class or interface in java.lang" class="external-link">Long</a>&nbsp;totalTasks,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Long.html" title="class or interface in java.lang" class="external-link">Long</a>&nbsp;failedTasks,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="OpenLineage.ExtractionErrorRunFacetErrors.html" title="class in io.openlineage.client">OpenLineage.ExtractionErrorRunFacetErrors</a>&gt;&nbsp;errors)</span></div>
-<div class="block">Factory method for ExtractionErrorRunFacet</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>totalTasks</code> - The number of distinguishable tasks in a run that were processed by OpenLineage, whether successfully or not. Those could be, for example, distinct SQL statements.</dd>
-<dd><code>failedTasks</code> - The number of distinguishable tasks in a run that were processed not successfully by OpenLineage. Those could be, for example, distinct SQL statements.</dd>
-<dd><code>errors</code> - the errors</dd>
-<dt>Returns:</dt>
-<dd>ExtractionErrorRunFacet</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="newExtractionErrorRunFacetBuilder()">
-<h3>newExtractionErrorRunFacetBuilder</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.ExtractionErrorRunFacetBuilder.html" title="class in io.openlineage.client">OpenLineage.ExtractionErrorRunFacetBuilder</a></span>&nbsp;<span class="element-name">newExtractionErrorRunFacetBuilder</span>()</div>
-<div class="block">Creates a builder for ExtractionErrorRunFacet</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>a new builder for ExtractionErrorRunFacet</dd>
 </dl>
 </section>
 </li>
