@@ -106,8 +106,9 @@ implements <a href="TransportConfig.html" title="interface in io.openlineage.cli
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E()" class="member-name-link">CompositeConfig</a>()</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(java.lang.Object,boolean)" class="member-name-link">CompositeConfig</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;transports,
- boolean&nbsp;continueOnFailure)</code></div>
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(java.lang.Object,java.lang.Boolean,java.lang.Boolean)" class="member-name-link">CompositeConfig</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;transports,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&nbsp;continueOnFailure,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&nbsp;withThreadPool)</code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </section>
@@ -124,25 +125,32 @@ implements <a href="TransportConfig.html" title="interface in io.openlineage.cli
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="CompositeConfig.html" title="class in io.openlineage.client.transports">CompositeConfig</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#createFromTransportConfigs(java.util.List,boolean)" class="member-name-link">createFromTransportConfigs</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="TransportConfig.html" title="interface in io.openlineage.client.transports">TransportConfig</a>&gt;&nbsp;transports,
- boolean&nbsp;continueOnFailure)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#createFromTransportConfigs(java.util.List,boolean,boolean)" class="member-name-link">createFromTransportConfigs</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="TransportConfig.html" title="interface in io.openlineage.client.transports">TransportConfig</a>&gt;&nbsp;transports,
+ boolean&nbsp;continueOnFailure,
+ boolean&nbsp;withThreadPool)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="TransportConfig.html" title="interface in io.openlineage.client.transports">TransportConfig</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getTransports()" class="member-name-link">getTransports</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getContinueOnFailure()" class="member-name-link">getContinueOnFailure</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isContinueOnFailure()" class="member-name-link">isContinueOnFailure</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="TransportConfig.html" title="interface in io.openlineage.client.transports">TransportConfig</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getTransports()" class="member-name-link">getTransports</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="CompositeConfig.html" title="class in io.openlineage.client.transports">CompositeConfig</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#mergeWithNonNull(io.openlineage.client.transports.CompositeConfig)" class="member-name-link">mergeWithNonNull</a><wbr>(<a href="CompositeConfig.html" title="class in io.openlineage.client.transports">CompositeConfig</a>&nbsp;other)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getWithThreadPool()" class="member-name-link">getWithThreadPool</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="CompositeConfig.html" title="class in io.openlineage.client.transports">CompositeConfig</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#mergeWithNonNull(io.openlineage.client.transports.CompositeConfig)" class="member-name-link">mergeWithNonNull</a><wbr>(<a href="CompositeConfig.html" title="class in io.openlineage.client.transports">CompositeConfig</a>&nbsp;other)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Method to create new config class based on current instance and non-null argument value.</div>
 </div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setContinueOnFailure(java.lang.Boolean)" class="member-name-link">setContinueOnFailure</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&nbsp;continueOnFailure)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setContinueOnFailure(boolean)" class="member-name-link">setContinueOnFailure</a><wbr>(boolean&nbsp;continueOnFailure)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setTransports(java.util.List)" class="member-name-link">setTransports</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="TransportConfig.html" title="interface in io.openlineage.client.transports">TransportConfig</a>&gt;&nbsp;transports)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setTransports(java.util.List)" class="member-name-link">setTransports</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="TransportConfig.html" title="interface in io.openlineage.client.transports">TransportConfig</a>&gt;&nbsp;transports)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setWithThreadPool(java.lang.Boolean)" class="member-name-link">setWithThreadPool</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&nbsp;withThreadPool)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toString()" class="member-name-link">toString</a>()</code></div>
@@ -171,10 +179,11 @@ implements <a href="TransportConfig.html" title="interface in io.openlineage.cli
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(java.lang.Object,boolean)">
+<section class="detail" id="&lt;init&gt;(java.lang.Object,java.lang.Boolean,java.lang.Boolean)">
 <h3>CompositeConfig</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">CompositeConfig</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;transports,
- boolean&nbsp;continueOnFailure)</span></div>
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&nbsp;continueOnFailure,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&nbsp;withThreadPool)</span></div>
 </section>
 </li>
 <li>
@@ -192,10 +201,11 @@ implements <a href="TransportConfig.html" title="interface in io.openlineage.cli
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="createFromTransportConfigs(java.util.List,boolean)">
+<section class="detail" id="createFromTransportConfigs(java.util.List,boolean,boolean)">
 <h3>createFromTransportConfigs</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="CompositeConfig.html" title="class in io.openlineage.client.transports">CompositeConfig</a></span>&nbsp;<span class="element-name">createFromTransportConfigs</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="TransportConfig.html" title="interface in io.openlineage.client.transports">TransportConfig</a>&gt;&nbsp;transports,
- boolean&nbsp;continueOnFailure)</span></div>
+ boolean&nbsp;continueOnFailure,
+ boolean&nbsp;withThreadPool)</span></div>
 </section>
 </li>
 <li>
@@ -239,15 +249,27 @@ implements <a href="TransportConfig.html" title="interface in io.openlineage.cli
 </section>
 </li>
 <li>
-<section class="detail" id="isContinueOnFailure()">
-<h3>isContinueOnFailure</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isContinueOnFailure</span>()</div>
+<section class="detail" id="getContinueOnFailure()">
+<h3>getContinueOnFailure</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a></span>&nbsp;<span class="element-name">getContinueOnFailure</span>()</div>
 </section>
 </li>
 <li>
-<section class="detail" id="setContinueOnFailure(boolean)">
+<section class="detail" id="setContinueOnFailure(java.lang.Boolean)">
 <h3>setContinueOnFailure</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setContinueOnFailure</span><wbr><span class="parameters">(boolean&nbsp;continueOnFailure)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setContinueOnFailure</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&nbsp;continueOnFailure)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="getWithThreadPool()">
+<h3>getWithThreadPool</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a></span>&nbsp;<span class="element-name">getWithThreadPool</span>()</div>
+</section>
+</li>
+<li>
+<section class="detail" id="setWithThreadPool(java.lang.Boolean)">
+<h3>setWithThreadPool</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setWithThreadPool</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&nbsp;withThreadPool)</span></div>
 </section>
 </li>
 </ul>
