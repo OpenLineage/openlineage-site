@@ -1977,6 +1977,32 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
+<section class="detail" id="newOwnershipDatasetFacetOwners(java.lang.String,java.lang.String)">
+<h3>newOwnershipDatasetFacetOwners</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.OwnershipDatasetFacetOwners.html" title="class in io.openlineage.client">OpenLineage.OwnershipDatasetFacetOwners</a></span>&nbsp;<span class="element-name">newOwnershipDatasetFacetOwners</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;type)</span></div>
+<div class="block">Factory method for OwnershipDatasetFacetOwners</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>name</code> - the identifier of the owner of the Dataset. It is recommended to define this as a URN. For example application:foo, user:jdoe, team:data</dd>
+<dd><code>type</code> - The type of ownership (optional)</dd>
+<dt>Returns:</dt>
+<dd>OwnershipDatasetFacetOwners</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="newOwnershipDatasetFacetOwnersBuilder()">
+<h3>newOwnershipDatasetFacetOwnersBuilder</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.OwnershipDatasetFacetOwnersBuilder.html" title="class in io.openlineage.client">OpenLineage.OwnershipDatasetFacetOwnersBuilder</a></span>&nbsp;<span class="element-name">newOwnershipDatasetFacetOwnersBuilder</span>()</div>
+<div class="block">Creates a builder for OwnershipDatasetFacetOwners</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a new builder for OwnershipDatasetFacetOwners</dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="newColumnLineageDatasetFacetFieldsAdditional(java.util.List,java.lang.String,java.lang.String)">
 <h3>newColumnLineageDatasetFacetFieldsAdditional</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.ColumnLineageDatasetFacetFieldsAdditional.html" title="class in io.openlineage.client">OpenLineage.ColumnLineageDatasetFacetFieldsAdditional</a></span>&nbsp;<span class="element-name">newColumnLineageDatasetFacetFieldsAdditional</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="OpenLineage.InputField.html" title="class in io.openlineage.client">OpenLineage.InputField</a>&gt;&nbsp;inputFields,
@@ -2001,32 +2027,6 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>a new builder for ColumnLineageDatasetFacetFieldsAdditional</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="newOwnershipDatasetFacetOwners(java.lang.String,java.lang.String)">
-<h3>newOwnershipDatasetFacetOwners</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.OwnershipDatasetFacetOwners.html" title="class in io.openlineage.client">OpenLineage.OwnershipDatasetFacetOwners</a></span>&nbsp;<span class="element-name">newOwnershipDatasetFacetOwners</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;type)</span></div>
-<div class="block">Factory method for OwnershipDatasetFacetOwners</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>name</code> - the identifier of the owner of the Dataset. It is recommended to define this as a URN. For example application:foo, user:jdoe, team:data</dd>
-<dd><code>type</code> - The type of ownership (optional)</dd>
-<dt>Returns:</dt>
-<dd>OwnershipDatasetFacetOwners</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="newOwnershipDatasetFacetOwnersBuilder()">
-<h3>newOwnershipDatasetFacetOwnersBuilder</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.OwnershipDatasetFacetOwnersBuilder.html" title="class in io.openlineage.client">OpenLineage.OwnershipDatasetFacetOwnersBuilder</a></span>&nbsp;<span class="element-name">newOwnershipDatasetFacetOwnersBuilder</span>()</div>
-<div class="block">Creates a builder for OwnershipDatasetFacetOwners</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>a new builder for OwnershipDatasetFacetOwners</dd>
 </dl>
 </section>
 </li>
@@ -2421,32 +2421,6 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="newGcpLineageJobFacetOrigin(java.lang.String,java.lang.String)">
-<h3>newGcpLineageJobFacetOrigin</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.GcpLineageJobFacetOrigin.html" title="class in io.openlineage.client">OpenLineage.GcpLineageJobFacetOrigin</a></span>&nbsp;<span class="element-name">newGcpLineageJobFacetOrigin</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;sourceType,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</span></div>
-<div class="block">Factory method for GcpLineageJobFacetOrigin</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>sourceType</code> - Type of the source. Possible values can be found in GCP documentation (https://cloud.google.com/data-catalog/docs/reference/data-lineage/rest/v1/projects.locations.processes#SourceType)</dd>
-<dd><code>name</code> - If the sourceType isn't CUSTOM, the value of this field should be a GCP resource name of the system, which reports lineage. The project and location parts of the resource name must match the project and location of the lineage resource being created. More details in GCP documentation https://cloud.google.com/data-catalog/docs/reference/data-lineage/rest/v1/projects.locations.processes#origin</dd>
-<dt>Returns:</dt>
-<dd>GcpLineageJobFacetOrigin</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="newGcpLineageJobFacetOriginBuilder()">
-<h3>newGcpLineageJobFacetOriginBuilder</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.GcpLineageJobFacetOriginBuilder.html" title="class in io.openlineage.client">OpenLineage.GcpLineageJobFacetOriginBuilder</a></span>&nbsp;<span class="element-name">newGcpLineageJobFacetOriginBuilder</span>()</div>
-<div class="block">Creates a builder for GcpLineageJobFacetOrigin</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>a new builder for GcpLineageJobFacetOrigin</dd>
-</dl>
-</section>
-</li>
-<li>
 <section class="detail" id="newParentRunFacetJob(java.lang.String,java.lang.String)">
 <h3>newParentRunFacetJob</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.ParentRunFacetJob.html" title="class in io.openlineage.client">OpenLineage.ParentRunFacetJob</a></span>&nbsp;<span class="element-name">newParentRunFacetJob</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;namespace,
@@ -2469,6 +2443,32 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>a new builder for ParentRunFacetJob</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="newGcpLineageJobFacetOrigin(java.lang.String,java.lang.String)">
+<h3>newGcpLineageJobFacetOrigin</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.GcpLineageJobFacetOrigin.html" title="class in io.openlineage.client">OpenLineage.GcpLineageJobFacetOrigin</a></span>&nbsp;<span class="element-name">newGcpLineageJobFacetOrigin</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;sourceType,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</span></div>
+<div class="block">Factory method for GcpLineageJobFacetOrigin</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>sourceType</code> - Type of the source. Possible values can be found in GCP documentation (https://cloud.google.com/data-catalog/docs/reference/data-lineage/rest/v1/projects.locations.processes#SourceType)</dd>
+<dd><code>name</code> - If the sourceType isn't CUSTOM, the value of this field should be a GCP resource name of the system, which reports lineage. The project and location parts of the resource name must match the project and location of the lineage resource being created. More details in GCP documentation https://cloud.google.com/data-catalog/docs/reference/data-lineage/rest/v1/projects.locations.processes#origin</dd>
+<dt>Returns:</dt>
+<dd>GcpLineageJobFacetOrigin</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="newGcpLineageJobFacetOriginBuilder()">
+<h3>newGcpLineageJobFacetOriginBuilder</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.GcpLineageJobFacetOriginBuilder.html" title="class in io.openlineage.client">OpenLineage.GcpLineageJobFacetOriginBuilder</a></span>&nbsp;<span class="element-name">newGcpLineageJobFacetOriginBuilder</span>()</div>
+<div class="block">Creates a builder for GcpLineageJobFacetOrigin</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a new builder for GcpLineageJobFacetOrigin</dd>
 </dl>
 </section>
 </li>
