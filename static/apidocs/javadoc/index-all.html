@@ -770,6 +770,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="io/openlineage/client/OpenLineage.LifecycleStateChangeDatasetFacet.LifecycleStateChange.html#DROP" class="member-name-link">DROP</a> - Enum constant in enum class io.openlineage.client.<a href="io/openlineage/client/OpenLineage.LifecycleStateChangeDatasetFacet.LifecycleStateChange.html" title="enum class in io.openlineage.client">OpenLineage.LifecycleStateChangeDatasetFacet.LifecycleStateChange</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="io/openlineage/client/circuitBreaker/TaskQueueCircuitBreaker.html#DROPPED_METRIC" class="member-name-link">DROPPED_METRIC</a> - Static variable in class io.openlineage.client.circuitBreaker.<a href="io/openlineage/client/circuitBreaker/TaskQueueCircuitBreaker.html" title="class in io.openlineage.client.circuitBreaker">TaskQueueCircuitBreaker</a></dt>
+<dd>&nbsp;</dd>
 </dl>
 <h2 class="title" id="I:E">E</h2>
 <dl class="index">
@@ -967,6 +969,8 @@ loadScripts(document, 'script');</script>
 <dt><a href="io/openlineage/client/OpenLineage.RunEvent.EventType.html#FAIL" class="member-name-link">FAIL</a> - Enum constant in enum class io.openlineage.client.<a href="io/openlineage/client/OpenLineage.RunEvent.EventType.html" title="enum class in io.openlineage.client">OpenLineage.RunEvent.EventType</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="io/openlineage/server/OpenLineage.RunEvent.EventType.html#FAIL" class="member-name-link">FAIL</a> - Enum constant in enum class io.openlineage.server.<a href="io/openlineage/server/OpenLineage.RunEvent.EventType.html" title="enum class in io.openlineage.server">OpenLineage.RunEvent.EventType</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="io/openlineage/client/circuitBreaker/TaskQueueCircuitBreaker.html#FAILED_METRIC" class="member-name-link">FAILED_METRIC</a> - Static variable in class io.openlineage.client.circuitBreaker.<a href="io/openlineage/client/circuitBreaker/TaskQueueCircuitBreaker.html" title="class in io.openlineage.client.circuitBreaker">TaskQueueCircuitBreaker</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="io/openlineage/client/OpenLineage.ExtractionErrorRunFacetBuilder.html#failedTasks(java.lang.Long)" class="member-name-link">failedTasks(Long)</a> - Method in class io.openlineage.client.<a href="io/openlineage/client/OpenLineage.ExtractionErrorRunFacetBuilder.html" title="class in io.openlineage.client">OpenLineage.ExtractionErrorRunFacetBuilder</a></dt>
 <dd>&nbsp;</dd>
@@ -1641,8 +1645,6 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="io/openlineage/client/OpenLineage.JobFacets.html#getDocumentation()" class="member-name-link">getDocumentation()</a> - Method in class io.openlineage.client.<a href="io/openlineage/client/OpenLineage.JobFacets.html" title="class in io.openlineage.client">OpenLineage.JobFacets</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="io/openlineage/client/circuitBreaker/TaskQueueCircuitBreaker.html#getDroppedCount()" class="member-name-link">getDroppedCount()</a> - Method in class io.openlineage.client.circuitBreaker.<a href="io/openlineage/client/circuitBreaker/TaskQueueCircuitBreaker.html" title="class in io.openlineage.client.circuitBreaker">TaskQueueCircuitBreaker</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="io/openlineage/client/transports/FacetsConfig.html#getEffectiveDisabledFacets()" class="member-name-link">getEffectiveDisabledFacets()</a> - Method in class io.openlineage.client.transports.<a href="io/openlineage/client/transports/FacetsConfig.html" title="class in io.openlineage.client.transports">FacetsConfig</a></dt>
 <dd>
 <div class="block">Merges deprecated and new mechanism for disabled facets into one effective list</div>
@@ -1722,8 +1724,6 @@ loadScripts(document, 'script');</script>
 <dt><a href="io/openlineage/server/OpenLineage.StaticDataset.html#getFacets()" class="member-name-link">getFacets()</a> - Method in class io.openlineage.server.<a href="io/openlineage/server/OpenLineage.StaticDataset.html" title="class in io.openlineage.server">OpenLineage.StaticDataset</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="io/openlineage/client/OpenLineageConfig.html#getFacetsConfig()" class="member-name-link">getFacetsConfig()</a> - Method in class io.openlineage.client.<a href="io/openlineage/client/OpenLineageConfig.html" title="class in io.openlineage.client">OpenLineageConfig</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="io/openlineage/client/circuitBreaker/TaskQueueCircuitBreaker.html#getFailedCount()" class="member-name-link">getFailedCount()</a> - Method in class io.openlineage.client.circuitBreaker.<a href="io/openlineage/client/circuitBreaker/TaskQueueCircuitBreaker.html" title="class in io.openlineage.client.circuitBreaker">TaskQueueCircuitBreaker</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="io/openlineage/client/OpenLineage.ExtractionErrorRunFacet.html#getFailedTasks()" class="member-name-link">getFailedTasks()</a> - Method in class io.openlineage.client.<a href="io/openlineage/client/OpenLineage.ExtractionErrorRunFacet.html" title="class in io.openlineage.client">OpenLineage.ExtractionErrorRunFacet</a></dt>
 <dd>&nbsp;</dd>
@@ -2216,8 +2216,6 @@ loadScripts(document, 'script');</script>
 <dt><a href="io/openlineage/client/OpenLineage.ExtractionErrorRunFacetErrors.html#getTaskNumber()" class="member-name-link">getTaskNumber()</a> - Method in class io.openlineage.client.<a href="io/openlineage/client/OpenLineage.ExtractionErrorRunFacetErrors.html" title="class in io.openlineage.client">OpenLineage.ExtractionErrorRunFacetErrors</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="io/openlineage/client/circuitBreaker/TaskQueueCircuitBreakerConfig.html#getThreadCount()" class="member-name-link">getThreadCount()</a> - Method in class io.openlineage.client.circuitBreaker.<a href="io/openlineage/client/circuitBreaker/TaskQueueCircuitBreakerConfig.html" title="class in io.openlineage.client.circuitBreaker">TaskQueueCircuitBreakerConfig</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="io/openlineage/client/circuitBreaker/TaskQueueCircuitBreaker.html#getTimedoutCount()" class="member-name-link">getTimedoutCount()</a> - Method in class io.openlineage.client.circuitBreaker.<a href="io/openlineage/client/circuitBreaker/TaskQueueCircuitBreaker.html" title="class in io.openlineage.client.circuitBreaker">TaskQueueCircuitBreaker</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="io/openlineage/client/circuitBreaker/ExecutorCircuitBreaker.html#getTimeout()" class="member-name-link">getTimeout()</a> - Method in class io.openlineage.client.circuitBreaker.<a href="io/openlineage/client/circuitBreaker/ExecutorCircuitBreaker.html" title="class in io.openlineage.client.circuitBreaker">ExecutorCircuitBreaker</a></dt>
 <dd>&nbsp;</dd>
@@ -5107,6 +5105,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="io/openlineage/client/OpenLineage.ExtractionErrorRunFacetErrorsBuilder.html#task(java.lang.String)" class="member-name-link">task(String)</a> - Method in class io.openlineage.client.<a href="io/openlineage/client/OpenLineage.ExtractionErrorRunFacetErrorsBuilder.html" title="class in io.openlineage.client">OpenLineage.ExtractionErrorRunFacetErrorsBuilder</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="io/openlineage/client/circuitBreaker/TaskQueueCircuitBreaker.html#TASK_QUEUE_METRIC_PREFIX" class="member-name-link">TASK_QUEUE_METRIC_PREFIX</a> - Static variable in class io.openlineage.client.circuitBreaker.<a href="io/openlineage/client/circuitBreaker/TaskQueueCircuitBreaker.html" title="class in io.openlineage.client.circuitBreaker">TaskQueueCircuitBreaker</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="io/openlineage/client/OpenLineage.ExtractionErrorRunFacetErrorsBuilder.html#taskNumber(java.lang.Long)" class="member-name-link">taskNumber(Long)</a> - Method in class io.openlineage.client.<a href="io/openlineage/client/OpenLineage.ExtractionErrorRunFacetErrorsBuilder.html" title="class in io.openlineage.client">OpenLineage.ExtractionErrorRunFacetErrorsBuilder</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="io/openlineage/client/circuitBreaker/TaskQueueCircuitBreaker.html" class="type-name-link" title="class in io.openlineage.client.circuitBreaker">TaskQueueCircuitBreaker</a> - Class in <a href="io/openlineage/client/circuitBreaker/package-summary.html">io.openlineage.client.circuitBreaker</a></dt>
@@ -5129,6 +5129,8 @@ loadScripts(document, 'script');</script>
 <dt><a href="io/openlineage/client/utils/jdbc/TeradataJdbcExtractor.html" class="type-name-link" title="class in io.openlineage.client.utils.jdbc">TeradataJdbcExtractor</a> - Class in <a href="io/openlineage/client/utils/jdbc/package-summary.html">io.openlineage.client.utils.jdbc</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="io/openlineage/client/utils/jdbc/TeradataJdbcExtractor.html#%3Cinit%3E()" class="member-name-link">TeradataJdbcExtractor()</a> - Constructor for class io.openlineage.client.utils.jdbc.<a href="io/openlineage/client/utils/jdbc/TeradataJdbcExtractor.html" title="class in io.openlineage.client.utils.jdbc">TeradataJdbcExtractor</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="io/openlineage/client/circuitBreaker/TaskQueueCircuitBreaker.html#TIMED_OUT_METRIC" class="member-name-link">TIMED_OUT_METRIC</a> - Static variable in class io.openlineage.client.circuitBreaker.<a href="io/openlineage/client/circuitBreaker/TaskQueueCircuitBreaker.html" title="class in io.openlineage.client.circuitBreaker">TaskQueueCircuitBreaker</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="io/openlineage/client/circuitBreaker/ExecutorCircuitBreaker.html#timeout" class="member-name-link">timeout</a> - Variable in class io.openlineage.client.circuitBreaker.<a href="io/openlineage/client/circuitBreaker/ExecutorCircuitBreaker.html" title="class in io.openlineage.client.circuitBreaker">ExecutorCircuitBreaker</a></dt>
 <dd>&nbsp;</dd>
