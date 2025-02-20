@@ -109,8 +109,14 @@ implements <a href="MergeConfig.html" title="interface in io.openlineage.client"
 <div class="col-first even-row-color"><code>protected <a href="transports/FacetsConfig.html" title="class in io.openlineage.client.transports">FacetsConfig</a></code></div>
 <div class="col-second even-row-color"><code><a href="#facetsConfig" class="member-name-link">facetsConfig</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>protected <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#metricsConfig" class="member-name-link">metricsConfig</a></code></div>
+<div class="col-first odd-row-color"><code>protected <a href="job/JobConfig.html" title="class in io.openlineage.client.job">JobConfig</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#jobConfig" class="member-name-link">jobConfig</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>protected <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#metricsConfig" class="member-name-link">metricsConfig</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>protected <a href="run/RunConfig.html" title="class in io.openlineage.client.run">RunConfig</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#runConfig" class="member-name-link">runConfig</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
 <div class="col-first even-row-color"><code>protected <a href="transports/TransportConfig.html" title="interface in io.openlineage.client.transports">TransportConfig</a></code></div>
 <div class="col-second even-row-color"><code><a href="#transportConfig" class="member-name-link">transportConfig</a></code></div>
@@ -128,11 +134,13 @@ implements <a href="MergeConfig.html" title="interface in io.openlineage.client"
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E()" class="member-name-link">OpenLineageConfig</a>()</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(io.openlineage.client.transports.TransportConfig,io.openlineage.client.transports.FacetsConfig,io.openlineage.client.dataset.DatasetConfig,io.openlineage.client.circuitBreaker.CircuitBreakerConfig,java.util.Map)" class="member-name-link">OpenLineageConfig</a><wbr>(<a href="transports/TransportConfig.html" title="interface in io.openlineage.client.transports">TransportConfig</a>&nbsp;transportConfig,
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(io.openlineage.client.transports.TransportConfig,io.openlineage.client.transports.FacetsConfig,io.openlineage.client.dataset.DatasetConfig,io.openlineage.client.circuitBreaker.CircuitBreakerConfig,java.util.Map,io.openlineage.client.run.RunConfig,io.openlineage.client.job.JobConfig)" class="member-name-link">OpenLineageConfig</a><wbr>(<a href="transports/TransportConfig.html" title="interface in io.openlineage.client.transports">TransportConfig</a>&nbsp;transportConfig,
  <a href="transports/FacetsConfig.html" title="class in io.openlineage.client.transports">FacetsConfig</a>&nbsp;facetsConfig,
  <a href="dataset/DatasetConfig.html" title="class in io.openlineage.client.dataset">DatasetConfig</a>&nbsp;datasetConfig,
  <a href="circuitBreaker/CircuitBreakerConfig.html" title="interface in io.openlineage.client.circuitBreaker">CircuitBreakerConfig</a>&nbsp;circuitBreaker,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;&nbsp;metricsConfig)</code></div>
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;&nbsp;metricsConfig,
+ <a href="run/RunConfig.html" title="class in io.openlineage.client.run">RunConfig</a>&nbsp;runConfig,
+ <a href="job/JobConfig.html" title="class in io.openlineage.client.job">JobConfig</a>&nbsp;jobConfig)</code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </section>
@@ -157,8 +165,14 @@ implements <a href="MergeConfig.html" title="interface in io.openlineage.client"
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="transports/FacetsConfig.html" title="class in io.openlineage.client.transports">FacetsConfig</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getFacetsConfig()" class="member-name-link">getFacetsConfig</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getMetricsConfig()" class="member-name-link">getMetricsConfig</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="job/JobConfig.html" title="class in io.openlineage.client.job">JobConfig</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getJobConfig()" class="member-name-link">getJobConfig</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getMetricsConfig()" class="member-name-link">getMetricsConfig</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="run/RunConfig.html" title="class in io.openlineage.client.run">RunConfig</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRunConfig()" class="member-name-link">getRunConfig</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="transports/TransportConfig.html" title="interface in io.openlineage.client.transports">TransportConfig</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getTransportConfig()" class="member-name-link">getTransportConfig</a>()</code></div>
@@ -178,7 +192,13 @@ implements <a href="MergeConfig.html" title="interface in io.openlineage.client"
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setFacetsConfig(io.openlineage.client.transports.FacetsConfig)" class="member-name-link">setFacetsConfig</a><wbr>(<a href="transports/FacetsConfig.html" title="class in io.openlineage.client.transports">FacetsConfig</a>&nbsp;facetsConfig)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setMetricsConfig(java.util.Map)" class="member-name-link">setMetricsConfig</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;&nbsp;metricsConfig)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setJobConfig(io.openlineage.client.job.JobConfig)" class="member-name-link">setJobConfig</a><wbr>(<a href="job/JobConfig.html" title="class in io.openlineage.client.job">JobConfig</a>&nbsp;jobConfig)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setMetricsConfig(java.util.Map)" class="member-name-link">setMetricsConfig</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;&nbsp;metricsConfig)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setRunConfig(io.openlineage.client.run.RunConfig)" class="member-name-link">setRunConfig</a><wbr>(<a href="run/RunConfig.html" title="class in io.openlineage.client.run">RunConfig</a>&nbsp;runConfig)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setTransportConfig(io.openlineage.client.transports.TransportConfig)" class="member-name-link">setTransportConfig</a><wbr>(<a href="transports/TransportConfig.html" title="interface in io.openlineage.client.transports">TransportConfig</a>&nbsp;transportConfig)</code></div>
@@ -233,6 +253,18 @@ implements <a href="MergeConfig.html" title="interface in io.openlineage.client"
 <div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</span>&nbsp;<span class="element-name">metricsConfig</span></div>
 </section>
 </li>
+<li>
+<section class="detail" id="runConfig">
+<h3>runConfig</h3>
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type"><a href="run/RunConfig.html" title="class in io.openlineage.client.run">RunConfig</a></span>&nbsp;<span class="element-name">runConfig</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="jobConfig">
+<h3>jobConfig</h3>
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type"><a href="job/JobConfig.html" title="class in io.openlineage.client.job">JobConfig</a></span>&nbsp;<span class="element-name">jobConfig</span></div>
+</section>
+</li>
 </ul>
 </section>
 </li>
@@ -248,13 +280,15 @@ implements <a href="MergeConfig.html" title="interface in io.openlineage.client"
 </section>
 </li>
 <li>
-<section class="detail" id="&lt;init&gt;(io.openlineage.client.transports.TransportConfig,io.openlineage.client.transports.FacetsConfig,io.openlineage.client.dataset.DatasetConfig,io.openlineage.client.circuitBreaker.CircuitBreakerConfig,java.util.Map)">
+<section class="detail" id="&lt;init&gt;(io.openlineage.client.transports.TransportConfig,io.openlineage.client.transports.FacetsConfig,io.openlineage.client.dataset.DatasetConfig,io.openlineage.client.circuitBreaker.CircuitBreakerConfig,java.util.Map,io.openlineage.client.run.RunConfig,io.openlineage.client.job.JobConfig)">
 <h3>OpenLineageConfig</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">OpenLineageConfig</span><wbr><span class="parameters">(<a href="transports/TransportConfig.html" title="interface in io.openlineage.client.transports">TransportConfig</a>&nbsp;transportConfig,
  <a href="transports/FacetsConfig.html" title="class in io.openlineage.client.transports">FacetsConfig</a>&nbsp;facetsConfig,
  <a href="dataset/DatasetConfig.html" title="class in io.openlineage.client.dataset">DatasetConfig</a>&nbsp;datasetConfig,
  <a href="circuitBreaker/CircuitBreakerConfig.html" title="interface in io.openlineage.client.circuitBreaker">CircuitBreakerConfig</a>&nbsp;circuitBreaker,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;&nbsp;metricsConfig)</span></div>
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;&nbsp;metricsConfig,
+ <a href="run/RunConfig.html" title="class in io.openlineage.client.run">RunConfig</a>&nbsp;runConfig,
+ <a href="job/JobConfig.html" title="class in io.openlineage.client.job">JobConfig</a>&nbsp;jobConfig)</span></div>
 </section>
 </li>
 </ul>
@@ -311,6 +345,18 @@ implements <a href="MergeConfig.html" title="interface in io.openlineage.client"
 </section>
 </li>
 <li>
+<section class="detail" id="getRunConfig()">
+<h3>getRunConfig</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="run/RunConfig.html" title="class in io.openlineage.client.run">RunConfig</a></span>&nbsp;<span class="element-name">getRunConfig</span>()</div>
+</section>
+</li>
+<li>
+<section class="detail" id="getJobConfig()">
+<h3>getJobConfig</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="job/JobConfig.html" title="class in io.openlineage.client.job">JobConfig</a></span>&nbsp;<span class="element-name">getJobConfig</span>()</div>
+</section>
+</li>
+<li>
 <section class="detail" id="setTransportConfig(io.openlineage.client.transports.TransportConfig)">
 <h3>setTransportConfig</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setTransportConfig</span><wbr><span class="parameters">(<a href="transports/TransportConfig.html" title="interface in io.openlineage.client.transports">TransportConfig</a>&nbsp;transportConfig)</span></div>
@@ -338,6 +384,18 @@ implements <a href="MergeConfig.html" title="interface in io.openlineage.client"
 <section class="detail" id="setMetricsConfig(java.util.Map)">
 <h3>setMetricsConfig</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setMetricsConfig</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;&nbsp;metricsConfig)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="setRunConfig(io.openlineage.client.run.RunConfig)">
+<h3>setRunConfig</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setRunConfig</span><wbr><span class="parameters">(<a href="run/RunConfig.html" title="class in io.openlineage.client.run">RunConfig</a>&nbsp;runConfig)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="setJobConfig(io.openlineage.client.job.JobConfig)">
+<h3>setJobConfig</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setJobConfig</span><wbr><span class="parameters">(<a href="job/JobConfig.html" title="class in io.openlineage.client.job">JobConfig</a>&nbsp;jobConfig)</span></div>
 </section>
 </li>
 </ul>

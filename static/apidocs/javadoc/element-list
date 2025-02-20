@@ -2,7 +2,9 @@ io.openlineage.client
 io.openlineage.client.circuitBreaker
 io.openlineage.client.dataset
 io.openlineage.client.dataset.namespace.resolver
+io.openlineage.client.job
 io.openlineage.client.metrics
+io.openlineage.client.run
 io.openlineage.client.transports
 io.openlineage.client.utils
 io.openlineage.client.utils.filesystem
