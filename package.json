@@ -46,10 +46,13 @@
   },
   "overrides": {
     "prebuild-install": {
-      "tar-fs": "tar-fs^2.1.2"
+      "tar-fs": "^2.1.2"
     },
     "sharp": { 
-      "tar-fs": "tar-fs^3.0.8"
+      "tar-fs": "^3.0.8"
+    },
+    "@argos-ci/core": {
+      "axios": "^1.8.2"
     }
   },
   "browserslist": {
