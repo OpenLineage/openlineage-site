@@ -116,6 +116,12 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Generate new UUID for an instant of time.</div>
 </div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#generateStaticUUID(java.time.Instant,byte%5B%5D)" class="member-name-link">generateStaticUUID</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Instant.html" title="class or interface in java.time" class="external-link">Instant</a>&nbsp;instant,
+ byte[]&nbsp;data)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Generate UUID for instant of time and input data.</div>
+</div>
 </div>
 </div>
 </div>
@@ -183,6 +189,32 @@ loadScripts(document, 'script');</script>
 <dd><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link"><code>UUID</code></a> v7</dd>
 <dt>Since:</dt>
 <dd>1.15.0</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="generateStaticUUID(java.time.Instant,byte[])">
+<h3>generateStaticUUID</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a></span>&nbsp;<span class="element-name">generateStaticUUID</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Instant.html" title="class or interface in java.time" class="external-link">Instant</a>&nbsp;instant,
+ byte[]&nbsp;data)</span></div>
+<div class="block">Generate UUID for instant of time and input data. Calling function with same arguments always
+ produces the same result.
+
+ <p>UUID version is an implementation detail, and <b>should not</b> be relied on. For now it is
+ <a href="https://datatracker.ietf.org/doc/rfc9562/">UUIDv7</a>, so for increasing instant
+ values, returned UUID is always greater than previous one. The only difference from RFC 9562 is
+ that least significant bytes are not random, but instead a SHA-1 hash of input data.
+
+ <p>Based on <a href="https://github.com/f4b6a3/uuid-creator/blob/98628c29ac9da704d215245f2099d9b439bc3084/src/main/java/com/github/f4b6a3/uuid/UuidCreator.java#L584-L593" target="_top">com.github.f4b6a3.uuid.UuidCreator.getTimeOrderedEpoch</a> implementation (MIT
+ License).</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>instant</code> - a given instant</dd>
+<dd><code>data</code> - a given data</dd>
+<dt>Returns:</dt>
+<dd><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link"><code>UUID</code></a> v7</dd>
+<dt>Since:</dt>
+<dd>1.32.0</dd>
 </dl>
 </section>
 </li>
