@@ -121,6 +121,16 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color"><code><a href="OpenLineage.Builder.html" class="type-name-link" title="interface in io.openlineage.client">OpenLineage.Builder</a>&lt;<a href="OpenLineage.Builder.html" title="type parameter in OpenLineage.Builder">T</a>&gt;</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><code>static final class&nbsp;</code></div>
+<div class="col-second odd-row-color"><code><a href="OpenLineage.CatalogDatasetFacet.html" class="type-name-link" title="class in io.openlineage.client">OpenLineage.CatalogDatasetFacet</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">model class for CatalogDatasetFacet</div>
+</div>
+<div class="col-first even-row-color"><code>final class&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="OpenLineage.CatalogDatasetFacetBuilder.html" class="type-name-link" title="class in io.openlineage.client">OpenLineage.CatalogDatasetFacetBuilder</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">builder class for CatalogDatasetFacet</div>
+</div>
+<div class="col-first odd-row-color"><code>static final class&nbsp;</code></div>
 <div class="col-second odd-row-color"><code><a href="OpenLineage.ColumnLineageDatasetFacet.html" class="type-name-link" title="class in io.openlineage.client">OpenLineage.ColumnLineageDatasetFacet</a></code></div>
 <div class="col-last odd-row-color">
 <div class="block">model class for ColumnLineageDatasetFacet</div>
@@ -944,6 +954,21 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OpenLineage.CatalogDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.CatalogDatasetFacet</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newCatalogDatasetFacet(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)" class="member-name-link">newCatalogDatasetFacet</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;framework,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;type,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;metadataUri,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;warehouseUri,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;source)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Factory method for CatalogDatasetFacet</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OpenLineage.CatalogDatasetFacetBuilder.html" title="class in io.openlineage.client">OpenLineage.CatalogDatasetFacetBuilder</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newCatalogDatasetFacetBuilder()" class="member-name-link">newCatalogDatasetFacetBuilder</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Creates a builder for CatalogDatasetFacet</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OpenLineage.ColumnLineageDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.ColumnLineageDatasetFacet</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newColumnLineageDatasetFacet(io.openlineage.client.OpenLineage.ColumnLineageDatasetFacetFields,java.util.List)" class="member-name-link">newColumnLineageDatasetFacet</a><wbr>(<a href="OpenLineage.ColumnLineageDatasetFacetFields.html" title="class in io.openlineage.client">OpenLineage.ColumnLineageDatasetFacetFields</a>&nbsp;fields,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="OpenLineage.InputField.html" title="class in io.openlineage.client">OpenLineage.InputField</a>&gt;&nbsp;dataset)</code></div>
@@ -1063,7 +1088,7 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newDatasetFacet()" class="member-name-link">newDatasetFacet</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OpenLineage.DatasetFacets.html" title="class in io.openlineage.client">OpenLineage.DatasetFacets</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newDatasetFacets(io.openlineage.client.OpenLineage.DatasourceDatasetFacet,io.openlineage.client.OpenLineage.DatasetVersionDatasetFacet,io.openlineage.client.OpenLineage.DatasetTypeDatasetFacet,io.openlineage.client.OpenLineage.StorageDatasetFacet,io.openlineage.client.OpenLineage.ColumnLineageDatasetFacet,io.openlineage.client.OpenLineage.LifecycleStateChangeDatasetFacet,io.openlineage.client.OpenLineage.TagsDatasetFacet,io.openlineage.client.OpenLineage.DocumentationDatasetFacet,io.openlineage.client.OpenLineage.SchemaDatasetFacet,io.openlineage.client.OpenLineage.OwnershipDatasetFacet,io.openlineage.client.OpenLineage.SymlinksDatasetFacet)" class="member-name-link">newDatasetFacets</a><wbr>(<a href="OpenLineage.DatasourceDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.DatasourceDatasetFacet</a>&nbsp;dataSource,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newDatasetFacets(io.openlineage.client.OpenLineage.DatasourceDatasetFacet,io.openlineage.client.OpenLineage.DatasetVersionDatasetFacet,io.openlineage.client.OpenLineage.DatasetTypeDatasetFacet,io.openlineage.client.OpenLineage.StorageDatasetFacet,io.openlineage.client.OpenLineage.ColumnLineageDatasetFacet,io.openlineage.client.OpenLineage.LifecycleStateChangeDatasetFacet,io.openlineage.client.OpenLineage.TagsDatasetFacet,io.openlineage.client.OpenLineage.DocumentationDatasetFacet,io.openlineage.client.OpenLineage.SchemaDatasetFacet,io.openlineage.client.OpenLineage.OwnershipDatasetFacet,io.openlineage.client.OpenLineage.CatalogDatasetFacet,io.openlineage.client.OpenLineage.SymlinksDatasetFacet)" class="member-name-link">newDatasetFacets</a><wbr>(<a href="OpenLineage.DatasourceDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.DatasourceDatasetFacet</a>&nbsp;dataSource,
  <a href="OpenLineage.DatasetVersionDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.DatasetVersionDatasetFacet</a>&nbsp;version,
  <a href="OpenLineage.DatasetTypeDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.DatasetTypeDatasetFacet</a>&nbsp;datasetType,
  <a href="OpenLineage.StorageDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.StorageDatasetFacet</a>&nbsp;storage,
@@ -1073,6 +1098,7 @@ loadScripts(document, 'script');</script>
  <a href="OpenLineage.DocumentationDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.DocumentationDatasetFacet</a>&nbsp;documentation,
  <a href="OpenLineage.SchemaDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.SchemaDatasetFacet</a>&nbsp;schema,
  <a href="OpenLineage.OwnershipDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.OwnershipDatasetFacet</a>&nbsp;ownership,
+ <a href="OpenLineage.CatalogDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.CatalogDatasetFacet</a>&nbsp;catalog,
  <a href="OpenLineage.SymlinksDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.SymlinksDatasetFacet</a>&nbsp;symlinks)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Factory method for DatasetFacets</div>
@@ -3117,6 +3143,34 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
+<section class="detail" id="newInputStatisticsInputDatasetFacet(java.lang.Long,java.lang.Long,java.lang.Long)">
+<h3>newInputStatisticsInputDatasetFacet</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.InputStatisticsInputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.InputStatisticsInputDatasetFacet</a></span>&nbsp;<span class="element-name">newInputStatisticsInputDatasetFacet</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Long.html" title="class or interface in java.lang" class="external-link">Long</a>&nbsp;rowCount,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Long.html" title="class or interface in java.lang" class="external-link">Long</a>&nbsp;size,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Long.html" title="class or interface in java.lang" class="external-link">Long</a>&nbsp;fileCount)</span></div>
+<div class="block">Factory method for InputStatisticsInputDatasetFacet</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>rowCount</code> - The number of rows read</dd>
+<dd><code>size</code> - The size in bytes read</dd>
+<dd><code>fileCount</code> - The number of files read</dd>
+<dt>Returns:</dt>
+<dd>InputStatisticsInputDatasetFacet</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="newInputStatisticsInputDatasetFacetBuilder()">
+<h3>newInputStatisticsInputDatasetFacetBuilder</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.InputStatisticsInputDatasetFacetBuilder.html" title="class in io.openlineage.client">OpenLineage.InputStatisticsInputDatasetFacetBuilder</a></span>&nbsp;<span class="element-name">newInputStatisticsInputDatasetFacetBuilder</span>()</div>
+<div class="block">Creates a builder for InputStatisticsInputDatasetFacet</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a new builder for InputStatisticsInputDatasetFacet</dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="newInputField(java.lang.String,java.lang.String,java.lang.String,java.util.List)">
 <h3>newInputField</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.InputField.html" title="class in io.openlineage.client">OpenLineage.InputField</a></span>&nbsp;<span class="element-name">newInputField</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;namespace,
@@ -3143,34 +3197,6 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>a new builder for InputField</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="newInputStatisticsInputDatasetFacet(java.lang.Long,java.lang.Long,java.lang.Long)">
-<h3>newInputStatisticsInputDatasetFacet</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.InputStatisticsInputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.InputStatisticsInputDatasetFacet</a></span>&nbsp;<span class="element-name">newInputStatisticsInputDatasetFacet</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Long.html" title="class or interface in java.lang" class="external-link">Long</a>&nbsp;rowCount,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Long.html" title="class or interface in java.lang" class="external-link">Long</a>&nbsp;size,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Long.html" title="class or interface in java.lang" class="external-link">Long</a>&nbsp;fileCount)</span></div>
-<div class="block">Factory method for InputStatisticsInputDatasetFacet</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>rowCount</code> - The number of rows read</dd>
-<dd><code>size</code> - The size in bytes read</dd>
-<dd><code>fileCount</code> - The number of files read</dd>
-<dt>Returns:</dt>
-<dd>InputStatisticsInputDatasetFacet</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="newInputStatisticsInputDatasetFacetBuilder()">
-<h3>newInputStatisticsInputDatasetFacetBuilder</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.InputStatisticsInputDatasetFacetBuilder.html" title="class in io.openlineage.client">OpenLineage.InputStatisticsInputDatasetFacetBuilder</a></span>&nbsp;<span class="element-name">newInputStatisticsInputDatasetFacetBuilder</span>()</div>
-<div class="block">Creates a builder for InputStatisticsInputDatasetFacet</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>a new builder for InputStatisticsInputDatasetFacet</dd>
 </dl>
 </section>
 </li>
@@ -3209,6 +3235,40 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>a new builder for JobFacets</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="newCatalogDatasetFacet(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+<h3>newCatalogDatasetFacet</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.CatalogDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.CatalogDatasetFacet</a></span>&nbsp;<span class="element-name">newCatalogDatasetFacet</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;framework,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;type,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;metadataUri,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;warehouseUri,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;source)</span></div>
+<div class="block">Factory method for CatalogDatasetFacet</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>framework</code> - The storage framework for which the catalog is configured</dd>
+<dd><code>type</code> - Type of the catalog.</dd>
+<dd><code>name</code> - Name of the catalog, as configured in the source system.</dd>
+<dd><code>metadataUri</code> - URI or connection string to the catalog, if applicable.</dd>
+<dd><code>warehouseUri</code> - URI or connection string to the physical location of the data that the catalog describes.</dd>
+<dd><code>source</code> - Source system where the catalog is configured.</dd>
+<dt>Returns:</dt>
+<dd>CatalogDatasetFacet</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="newCatalogDatasetFacetBuilder()">
+<h3>newCatalogDatasetFacetBuilder</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.CatalogDatasetFacetBuilder.html" title="class in io.openlineage.client">OpenLineage.CatalogDatasetFacetBuilder</a></span>&nbsp;<span class="element-name">newCatalogDatasetFacetBuilder</span>()</div>
+<div class="block">Creates a builder for CatalogDatasetFacet</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a new builder for CatalogDatasetFacet</dd>
 </dl>
 </section>
 </li>
@@ -3355,7 +3415,7 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="newDatasetFacets(io.openlineage.client.OpenLineage.DatasourceDatasetFacet,io.openlineage.client.OpenLineage.DatasetVersionDatasetFacet,io.openlineage.client.OpenLineage.DatasetTypeDatasetFacet,io.openlineage.client.OpenLineage.StorageDatasetFacet,io.openlineage.client.OpenLineage.ColumnLineageDatasetFacet,io.openlineage.client.OpenLineage.LifecycleStateChangeDatasetFacet,io.openlineage.client.OpenLineage.TagsDatasetFacet,io.openlineage.client.OpenLineage.DocumentationDatasetFacet,io.openlineage.client.OpenLineage.SchemaDatasetFacet,io.openlineage.client.OpenLineage.OwnershipDatasetFacet,io.openlineage.client.OpenLineage.SymlinksDatasetFacet)">
+<section class="detail" id="newDatasetFacets(io.openlineage.client.OpenLineage.DatasourceDatasetFacet,io.openlineage.client.OpenLineage.DatasetVersionDatasetFacet,io.openlineage.client.OpenLineage.DatasetTypeDatasetFacet,io.openlineage.client.OpenLineage.StorageDatasetFacet,io.openlineage.client.OpenLineage.ColumnLineageDatasetFacet,io.openlineage.client.OpenLineage.LifecycleStateChangeDatasetFacet,io.openlineage.client.OpenLineage.TagsDatasetFacet,io.openlineage.client.OpenLineage.DocumentationDatasetFacet,io.openlineage.client.OpenLineage.SchemaDatasetFacet,io.openlineage.client.OpenLineage.OwnershipDatasetFacet,io.openlineage.client.OpenLineage.CatalogDatasetFacet,io.openlineage.client.OpenLineage.SymlinksDatasetFacet)">
 <h3>newDatasetFacets</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.DatasetFacets.html" title="class in io.openlineage.client">OpenLineage.DatasetFacets</a></span>&nbsp;<span class="element-name">newDatasetFacets</span><wbr><span class="parameters">(<a href="OpenLineage.DatasourceDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.DatasourceDatasetFacet</a>&nbsp;dataSource,
  <a href="OpenLineage.DatasetVersionDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.DatasetVersionDatasetFacet</a>&nbsp;version,
@@ -3367,6 +3427,7 @@ loadScripts(document, 'script');</script>
  <a href="OpenLineage.DocumentationDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.DocumentationDatasetFacet</a>&nbsp;documentation,
  <a href="OpenLineage.SchemaDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.SchemaDatasetFacet</a>&nbsp;schema,
  <a href="OpenLineage.OwnershipDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.OwnershipDatasetFacet</a>&nbsp;ownership,
+ <a href="OpenLineage.CatalogDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.CatalogDatasetFacet</a>&nbsp;catalog,
  <a href="OpenLineage.SymlinksDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.SymlinksDatasetFacet</a>&nbsp;symlinks)</span></div>
 <div class="block">Factory method for DatasetFacets</div>
 <dl class="notes">
@@ -3381,6 +3442,7 @@ loadScripts(document, 'script');</script>
 <dd><code>documentation</code> - the documentation</dd>
 <dd><code>schema</code> - the schema</dd>
 <dd><code>ownership</code> - the ownership</dd>
+<dd><code>catalog</code> - the catalog</dd>
 <dd><code>symlinks</code> - the symlinks</dd>
 <dt>Returns:</dt>
 <dd>DatasetFacets</dd>
@@ -3635,30 +3697,6 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="newDataQualityAssertionsDatasetFacet(java.util.List)">
-<h3>newDataQualityAssertionsDatasetFacet</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.DataQualityAssertionsDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.DataQualityAssertionsDatasetFacet</a></span>&nbsp;<span class="element-name">newDataQualityAssertionsDatasetFacet</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="OpenLineage.DataQualityAssertionsDatasetFacetAssertions.html" title="class in io.openlineage.client">OpenLineage.DataQualityAssertionsDatasetFacetAssertions</a>&gt;&nbsp;assertions)</span></div>
-<div class="block">Factory method for DataQualityAssertionsDatasetFacet</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>assertions</code> - the assertions</dd>
-<dt>Returns:</dt>
-<dd>DataQualityAssertionsDatasetFacet</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="newDataQualityAssertionsDatasetFacetBuilder()">
-<h3>newDataQualityAssertionsDatasetFacetBuilder</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.DataQualityAssertionsDatasetFacetBuilder.html" title="class in io.openlineage.client">OpenLineage.DataQualityAssertionsDatasetFacetBuilder</a></span>&nbsp;<span class="element-name">newDataQualityAssertionsDatasetFacetBuilder</span>()</div>
-<div class="block">Creates a builder for DataQualityAssertionsDatasetFacet</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>a new builder for DataQualityAssertionsDatasetFacet</dd>
-</dl>
-</section>
-</li>
-<li>
 <section class="detail" id="newColumnLineageDatasetFacet(io.openlineage.client.OpenLineage.ColumnLineageDatasetFacetFields,java.util.List)">
 <h3>newColumnLineageDatasetFacet</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.ColumnLineageDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.ColumnLineageDatasetFacet</a></span>&nbsp;<span class="element-name">newColumnLineageDatasetFacet</span><wbr><span class="parameters">(<a href="OpenLineage.ColumnLineageDatasetFacetFields.html" title="class in io.openlineage.client">OpenLineage.ColumnLineageDatasetFacetFields</a>&nbsp;fields,
@@ -3681,6 +3719,30 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>a new builder for ColumnLineageDatasetFacet</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="newDataQualityAssertionsDatasetFacet(java.util.List)">
+<h3>newDataQualityAssertionsDatasetFacet</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.DataQualityAssertionsDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.DataQualityAssertionsDatasetFacet</a></span>&nbsp;<span class="element-name">newDataQualityAssertionsDatasetFacet</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="OpenLineage.DataQualityAssertionsDatasetFacetAssertions.html" title="class in io.openlineage.client">OpenLineage.DataQualityAssertionsDatasetFacetAssertions</a>&gt;&nbsp;assertions)</span></div>
+<div class="block">Factory method for DataQualityAssertionsDatasetFacet</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>assertions</code> - the assertions</dd>
+<dt>Returns:</dt>
+<dd>DataQualityAssertionsDatasetFacet</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="newDataQualityAssertionsDatasetFacetBuilder()">
+<h3>newDataQualityAssertionsDatasetFacetBuilder</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.DataQualityAssertionsDatasetFacetBuilder.html" title="class in io.openlineage.client">OpenLineage.DataQualityAssertionsDatasetFacetBuilder</a></span>&nbsp;<span class="element-name">newDataQualityAssertionsDatasetFacetBuilder</span>()</div>
+<div class="block">Creates a builder for DataQualityAssertionsDatasetFacet</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a new builder for DataQualityAssertionsDatasetFacet</dd>
 </dl>
 </section>
 </li>
