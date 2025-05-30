@@ -121,69 +121,76 @@ loadScripts(document, 'script');</script>
 <div class="block">Converts the value of an object from one type to another.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static &lt;T&gt;&nbsp;T</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#fromJson(java.lang.String,com.fasterxml.jackson.core.type.TypeReference)" class="member-name-link">fromJson</a><wbr>(@NonNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;json,
- @NonNull com.fasterxml.jackson.core.type.TypeReference&lt;T&gt;&nbsp;type)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#deepCopy(T,com.fasterxml.jackson.core.type.TypeReference)" class="member-name-link">deepCopy</a><wbr>(T&nbsp;object,
+ com.fasterxml.jackson.core.type.TypeReference&lt;T&gt;&nbsp;type)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Performs a deep copy of an object by serializing it to JSON and then deserializing it back to
+ its original type.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static &lt;T&gt;&nbsp;T</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#fromJson(java.lang.String,com.fasterxml.jackson.core.type.TypeReference)" class="member-name-link">fromJson</a><wbr>(@NonNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;json,
+ @NonNull com.fasterxml.jackson.core.type.TypeReference&lt;T&gt;&nbsp;type)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Converts the provided JSON string to an instance of the specified type.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static &lt;T extends <a href="OpenLineageConfig.html" title="class in io.openlineage.client">OpenLineageConfig</a>&gt;<br>T</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#loadOpenLineageConfigFromEnvVars(com.fasterxml.jackson.core.type.TypeReference)" class="member-name-link">loadOpenLineageConfigFromEnvVars</a><wbr>(com.fasterxml.jackson.core.type.TypeReference&lt;T&gt;&nbsp;valueTypeRef)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static &lt;T extends <a href="OpenLineageConfig.html" title="class in io.openlineage.client">OpenLineageConfig</a>&gt;<br>T</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#loadOpenLineageConfigFromEnvVars(com.fasterxml.jackson.core.type.TypeReference)" class="member-name-link">loadOpenLineageConfigFromEnvVars</a><wbr>(com.fasterxml.jackson.core.type.TypeReference&lt;T&gt;&nbsp;valueTypeRef)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">This method reads the OpenLineage configuration from environment variables, converts it to a
  JSON string, and then parses the JSON string into an instance of the specified <a href="OpenLineageConfig.html" title="class in io.openlineage.client"><code>OpenLineageConfig</code></a> subclass.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static &lt;T extends <a href="OpenLineageConfig.html" title="class in io.openlineage.client">OpenLineageConfig</a>&gt;<br>T</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#loadOpenLineageConfigJson(java.io.InputStream,com.fasterxml.jackson.core.type.TypeReference)" class="member-name-link">loadOpenLineageConfigJson</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/InputStream.html" title="class or interface in java.io" class="external-link">InputStream</a>&nbsp;inputStream,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static &lt;T extends <a href="OpenLineageConfig.html" title="class in io.openlineage.client">OpenLineageConfig</a>&gt;<br>T</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#loadOpenLineageConfigJson(java.io.InputStream,com.fasterxml.jackson.core.type.TypeReference)" class="member-name-link">loadOpenLineageConfigJson</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/InputStream.html" title="class or interface in java.io" class="external-link">InputStream</a>&nbsp;inputStream,
  com.fasterxml.jackson.core.type.TypeReference&lt;T&gt;&nbsp;valueTypeRef)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Loads and parses OpenLineage JSON configuration from an <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/InputStream.html" title="class or interface in java.io" class="external-link"><code>InputStream</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static &lt;T extends <a href="OpenLineageConfig.html" title="class in io.openlineage.client">OpenLineageConfig</a>&gt;<br>T</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#loadOpenLineageConfigYaml(io.openlineage.client.ConfigPathProvider,com.fasterxml.jackson.core.type.TypeReference)" class="member-name-link">loadOpenLineageConfigYaml</a><wbr>(<a href="ConfigPathProvider.html" title="interface in io.openlineage.client">ConfigPathProvider</a>&nbsp;configPathProvider,
- com.fasterxml.jackson.core.type.TypeReference&lt;T&gt;&nbsp;valueTypeRef)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Loads and parses OpenLineage configuration from the provided paths.</div>
-</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static &lt;T extends <a href="OpenLineageConfig.html" title="class in io.openlineage.client">OpenLineageConfig</a>&gt;<br>T</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#loadOpenLineageConfigYaml(java.io.InputStream,com.fasterxml.jackson.core.type.TypeReference)" class="member-name-link">loadOpenLineageConfigYaml</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/InputStream.html" title="class or interface in java.io" class="external-link">InputStream</a>&nbsp;inputStream,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#loadOpenLineageConfigYaml(io.openlineage.client.ConfigPathProvider,com.fasterxml.jackson.core.type.TypeReference)" class="member-name-link">loadOpenLineageConfigYaml</a><wbr>(<a href="ConfigPathProvider.html" title="interface in io.openlineage.client">ConfigPathProvider</a>&nbsp;configPathProvider,
  com.fasterxml.jackson.core.type.TypeReference&lt;T&gt;&nbsp;valueTypeRef)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Loads and parses OpenLineage configuration from the provided paths.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static &lt;T extends <a href="OpenLineageConfig.html" title="class in io.openlineage.client">OpenLineageConfig</a>&gt;<br>T</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#loadOpenLineageConfigYaml(java.io.InputStream,com.fasterxml.jackson.core.type.TypeReference)" class="member-name-link">loadOpenLineageConfigYaml</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/InputStream.html" title="class or interface in java.io" class="external-link">InputStream</a>&nbsp;inputStream,
+ com.fasterxml.jackson.core.type.TypeReference&lt;T&gt;&nbsp;valueTypeRef)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Loads and parses OpenLineage YAML configuration from an <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/InputStream.html" title="class or interface in java.io" class="external-link"><code>InputStream</code></a>.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static &lt;T,<wbr>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static &lt;T,<wbr>
 F&gt;&nbsp;T</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#mergeFacets(java.util.Map,T,java.lang.Class)" class="member-name-link">mergeFacets</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr>F&gt;&nbsp;facetsMap,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#mergeFacets(java.util.Map,T,java.lang.Class)" class="member-name-link">mergeFacets</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr>F&gt;&nbsp;facetsMap,
  T&nbsp;facetsContainer,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;T&gt;&nbsp;klass)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Merges the given facets map with an existing facets container, giving precedence to the values
  in the facets map.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static com.fasterxml.jackson.databind.ObjectMapper</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#newObjectMapper()" class="member-name-link">newObjectMapper</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Creates a new <code>ObjectMapper</code> instance configured with modules for JDK8 and JavaTime,
- including settings to ignore unknown properties and to not write dates as timestamps.</div>
-</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static com.fasterxml.jackson.databind.ObjectMapper</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#newObjectMapper(com.fasterxml.jackson.core.JsonFactory)" class="member-name-link">newObjectMapper</a><wbr>(com.fasterxml.jackson.core.JsonFactory&nbsp;jsonFactory)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#newObjectMapper()" class="member-name-link">newObjectMapper</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates a new <code>ObjectMapper</code> instance configured with modules for JDK8 and JavaTime,
  including settings to ignore unknown properties and to not write dates as timestamps.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="OpenLineage.RunEvent.html" title="class in io.openlineage.client">OpenLineage.RunEvent</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#runEventFromJson(java.lang.String)" class="member-name-link">runEventFromJson</a><wbr>(@NonNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;json)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static com.fasterxml.jackson.databind.ObjectMapper</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#newObjectMapper(com.fasterxml.jackson.core.JsonFactory)" class="member-name-link">newObjectMapper</a><wbr>(com.fasterxml.jackson.core.JsonFactory&nbsp;jsonFactory)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Creates a new <code>ObjectMapper</code> instance configured with modules for JDK8 and JavaTime,
+ including settings to ignore unknown properties and to not write dates as timestamps.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="OpenLineage.RunEvent.html" title="class in io.openlineage.client">OpenLineage.RunEvent</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#runEventFromJson(java.lang.String)" class="member-name-link">runEventFromJson</a><wbr>(@NonNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;json)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Convenience method to convert a JSON string directly into a <a href="OpenLineage.RunEvent.html" title="class in io.openlineage.client"><code>OpenLineage.RunEvent</code></a> instance.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#toJson(java.lang.Object)" class="member-name-link">toJson</a><wbr>(@NonNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;value)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#toJson(java.lang.Object)" class="member-name-link">toJson</a><wbr>(@NonNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;value)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Converts the provided value to a JSON string.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URI.html" title="class or interface in java.net" class="external-link">URI</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#toUri(java.lang.String)" class="member-name-link">toUri</a><wbr>(@NonNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;urlString)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URI.html" title="class or interface in java.net" class="external-link">URI</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#toUri(java.lang.String)" class="member-name-link">toUri</a><wbr>(@NonNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;urlString)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Converts a string URL into an <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URI.html" title="class or interface in java.net" class="external-link"><code>URI</code></a> object.</div>
 </div>
 </div>
@@ -276,6 +283,28 @@ F&gt;&nbsp;T</code></div>
 <dd>An instance of the specified type.</dd>
 <dt>Throws:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/UncheckedIOException.html" title="class or interface in java.io" class="external-link">UncheckedIOException</a></code> - If an I/O error occurs during conversion.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="deepCopy(T,com.fasterxml.jackson.core.type.TypeReference)">
+<h3 id="deepCopy(java.lang.Object,com.fasterxml.jackson.core.type.TypeReference)">deepCopy</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;T&gt;</span>&nbsp;<span class="return-type">T</span>&nbsp;<span class="element-name">deepCopy</span><wbr><span class="parameters">(@NonNull
+ T&nbsp;object,
+ com.fasterxml.jackson.core.type.TypeReference&lt;T&gt;&nbsp;type)</span>
+                      throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/UncheckedIOException.html" title="class or interface in java.io" class="external-link">UncheckedIOException</a></span></div>
+<div class="block">Performs a deep copy of an object by serializing it to JSON and then deserializing it back to
+ its original type.</div>
+<dl class="notes">
+<dt>Type Parameters:</dt>
+<dd><code>T</code> - The generic type of the object.</dd>
+<dt>Parameters:</dt>
+<dd><code>object</code> - The object to be deep copied.</dd>
+<dd><code>type</code> - The Jackson TypeReference used for deserialization.</dd>
+<dt>Returns:</dt>
+<dd>A deep copy of the input object.</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/UncheckedIOException.html" title="class or interface in java.io" class="external-link">UncheckedIOException</a></code></dd>
 </dl>
 </section>
 </li>
