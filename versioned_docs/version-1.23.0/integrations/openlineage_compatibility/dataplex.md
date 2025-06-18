@@ -3,7 +3,16 @@ sidebar_position: 3
 title: Dataplex
 ---
 
-import Transports from '@site/docs/integrations/openlineage_compatibility/dataplex.md';
+## Facets
+|openlineage version|run_event|processing_engine|
+|-------------------|---------|-----------------|
+|       1.14.0      |    +    |        +        |
+|       1.15.0      |    +    |        -        |
+|       1.23.0      |    +    |        +        |
 
-<Transports/>
+## Producer Inputs
+|   Producer   |Status|
+|--------------|------|
+|    Airflow   |   +  |
+|Spark Dataproc|   +  |
 
