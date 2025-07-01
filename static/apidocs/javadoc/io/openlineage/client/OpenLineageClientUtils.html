@@ -133,6 +133,12 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Converts the provided JSON string to an instance of the specified type.</div>
 </div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ExecutorService.html" title="class or interface in java.util.concurrent" class="external-link">ExecutorService</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getExecutor()" class="member-name-link">getExecutor</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ExecutorService.html" title="class or interface in java.util.concurrent" class="external-link">ExecutorService</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getOrCreateExecutor()" class="member-name-link">getOrCreateExecutor</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static &lt;T extends <a href="OpenLineageConfig.html" title="class in io.openlineage.client">OpenLineageConfig</a>&gt;<br>T</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#loadOpenLineageConfigFromEnvVars(com.fasterxml.jackson.core.type.TypeReference)" class="member-name-link">loadOpenLineageConfigFromEnvVars</a><wbr>(com.fasterxml.jackson.core.type.TypeReference&lt;T&gt;&nbsp;valueTypeRef)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
@@ -468,6 +474,18 @@ F&gt;</span>&nbsp;<span class="return-type">T</span>&nbsp;<span class="element-n
 <dd><code><a href="OpenLineageClientException.html" title="class in io.openlineage.client">OpenLineageClientException</a></code> - If an error occurs while reading or parsing the
      configuration.</dd>
 </dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getOrCreateExecutor()">
+<h3>getOrCreateExecutor</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ExecutorService.html" title="class or interface in java.util.concurrent" class="external-link">ExecutorService</a></span>&nbsp;<span class="element-name">getOrCreateExecutor</span>()</div>
+</section>
+</li>
+<li>
+<section class="detail" id="getExecutor()">
+<h3>getExecutor</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ExecutorService.html" title="class or interface in java.util.concurrent" class="external-link">ExecutorService</a>&gt;</span>&nbsp;<span class="element-name">getExecutor</span>()</div>
 </section>
 </li>
 </ul>
