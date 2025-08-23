@@ -132,8 +132,8 @@ example:
 Anonymous connection:
 
 ```ini
-spark.openlineage.transport.type=http
-spark.openlineage.transport.url=http://localhost:5000
+openlineage.transport.type=http
+openlineage.transport.url=http://localhost:5000
 ```
 
 With authorization:
