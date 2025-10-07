@@ -1888,8 +1888,8 @@ loadScripts(document, 'script');</script>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newOutputDatasetFacet()" class="member-name-link">newOutputDatasetFacet</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OpenLineage.OutputDatasetOutputFacets.html" title="class in io.openlineage.client">OpenLineage.OutputDatasetOutputFacets</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newOutputDatasetOutputFacets(io.openlineage.client.OpenLineage.IcebergCommitReportOutputDatasetFacet,io.openlineage.client.OpenLineage.OutputStatisticsOutputDatasetFacet)" class="member-name-link">newOutputDatasetOutputFacets</a><wbr>(<a href="OpenLineage.IcebergCommitReportOutputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.IcebergCommitReportOutputDatasetFacet</a>&nbsp;iceberg_scan_report,
- <a href="OpenLineage.OutputStatisticsOutputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.OutputStatisticsOutputDatasetFacet</a>&nbsp;outputStatistics)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newOutputDatasetOutputFacets(io.openlineage.client.OpenLineage.OutputStatisticsOutputDatasetFacet,io.openlineage.client.OpenLineage.IcebergCommitReportOutputDatasetFacet)" class="member-name-link">newOutputDatasetOutputFacets</a><wbr>(<a href="OpenLineage.OutputStatisticsOutputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.OutputStatisticsOutputDatasetFacet</a>&nbsp;outputStatistics,
+ <a href="OpenLineage.IcebergCommitReportOutputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.IcebergCommitReportOutputDatasetFacet</a>&nbsp;iceberg_commit_report)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Factory method for OutputDatasetOutputFacets</div>
 </div>
@@ -2618,15 +2618,15 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="newOutputDatasetOutputFacets(io.openlineage.client.OpenLineage.IcebergCommitReportOutputDatasetFacet,io.openlineage.client.OpenLineage.OutputStatisticsOutputDatasetFacet)">
+<section class="detail" id="newOutputDatasetOutputFacets(io.openlineage.client.OpenLineage.OutputStatisticsOutputDatasetFacet,io.openlineage.client.OpenLineage.IcebergCommitReportOutputDatasetFacet)">
 <h3>newOutputDatasetOutputFacets</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.OutputDatasetOutputFacets.html" title="class in io.openlineage.client">OpenLineage.OutputDatasetOutputFacets</a></span>&nbsp;<span class="element-name">newOutputDatasetOutputFacets</span><wbr><span class="parameters">(<a href="OpenLineage.IcebergCommitReportOutputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.IcebergCommitReportOutputDatasetFacet</a>&nbsp;iceberg_scan_report,
- <a href="OpenLineage.OutputStatisticsOutputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.OutputStatisticsOutputDatasetFacet</a>&nbsp;outputStatistics)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.OutputDatasetOutputFacets.html" title="class in io.openlineage.client">OpenLineage.OutputDatasetOutputFacets</a></span>&nbsp;<span class="element-name">newOutputDatasetOutputFacets</span><wbr><span class="parameters">(<a href="OpenLineage.OutputStatisticsOutputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.OutputStatisticsOutputDatasetFacet</a>&nbsp;outputStatistics,
+ <a href="OpenLineage.IcebergCommitReportOutputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.IcebergCommitReportOutputDatasetFacet</a>&nbsp;iceberg_commit_report)</span></div>
 <div class="block">Factory method for OutputDatasetOutputFacets</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>iceberg_scan_report</code> - the iceberg_scan_report</dd>
 <dd><code>outputStatistics</code> - the outputStatistics</dd>
+<dd><code>iceberg_commit_report</code> - the iceberg_commit_report</dd>
 <dt>Returns:</dt>
 <dd>OutputDatasetOutputFacets</dd>
 </dl>
@@ -3288,38 +3288,6 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="newIcebergCommitReportOutputDatasetFacet(java.lang.Double,java.lang.Double,java.lang.String,io.openlineage.client.OpenLineage.IcebergCommitReportOutputDatasetFacetCommitMetrics,io.openlineage.client.OpenLineage.IcebergCommitReportOutputDatasetFacetMetadata)">
-<h3>newIcebergCommitReportOutputDatasetFacet</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.IcebergCommitReportOutputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.IcebergCommitReportOutputDatasetFacet</a></span>&nbsp;<span class="element-name">newIcebergCommitReportOutputDatasetFacet</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;snapshotId,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;sequenceNumber,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;operation,
- <a href="OpenLineage.IcebergCommitReportOutputDatasetFacetCommitMetrics.html" title="class in io.openlineage.client">OpenLineage.IcebergCommitReportOutputDatasetFacetCommitMetrics</a>&nbsp;commitMetrics,
- <a href="OpenLineage.IcebergCommitReportOutputDatasetFacetMetadata.html" title="class in io.openlineage.client">OpenLineage.IcebergCommitReportOutputDatasetFacetMetadata</a>&nbsp;metadata)</span></div>
-<div class="block">Factory method for IcebergCommitReportOutputDatasetFacet</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>snapshotId</code> - Snapshot ID of the iceberg table</dd>
-<dd><code>sequenceNumber</code> - Sequence number of the iceberg table</dd>
-<dd><code>operation</code> - Operation that was performed on the iceberg table</dd>
-<dd><code>commitMetrics</code> - the commitMetrics</dd>
-<dd><code>metadata</code> - the metadata</dd>
-<dt>Returns:</dt>
-<dd>IcebergCommitReportOutputDatasetFacet</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="newIcebergCommitReportOutputDatasetFacetBuilder()">
-<h3>newIcebergCommitReportOutputDatasetFacetBuilder</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.IcebergCommitReportOutputDatasetFacetBuilder.html" title="class in io.openlineage.client">OpenLineage.IcebergCommitReportOutputDatasetFacetBuilder</a></span>&nbsp;<span class="element-name">newIcebergCommitReportOutputDatasetFacetBuilder</span>()</div>
-<div class="block">Creates a builder for IcebergCommitReportOutputDatasetFacet</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>a new builder for IcebergCommitReportOutputDatasetFacet</dd>
-</dl>
-</section>
-</li>
-<li>
 <section class="detail" id="newTagsJobFacetFields(java.lang.String,java.lang.String,java.lang.String)">
 <h3>newTagsJobFacetFields</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.TagsJobFacetFields.html" title="class in io.openlineage.client">OpenLineage.TagsJobFacetFields</a></span>&nbsp;<span class="element-name">newTagsJobFacetFields</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key,
@@ -3516,28 +3484,6 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>a new builder for RunEvent</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="newIcebergCommitReportOutputDatasetFacetMetadata()">
-<h3>newIcebergCommitReportOutputDatasetFacetMetadata</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.IcebergCommitReportOutputDatasetFacetMetadata.html" title="class in io.openlineage.client">OpenLineage.IcebergCommitReportOutputDatasetFacetMetadata</a></span>&nbsp;<span class="element-name">newIcebergCommitReportOutputDatasetFacetMetadata</span>()</div>
-<div class="block">Factory method for IcebergCommitReportOutputDatasetFacetMetadata</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>IcebergCommitReportOutputDatasetFacetMetadata</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="newIcebergCommitReportOutputDatasetFacetMetadataBuilder()">
-<h3>newIcebergCommitReportOutputDatasetFacetMetadataBuilder</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.IcebergCommitReportOutputDatasetFacetMetadataBuilder.html" title="class in io.openlineage.client">OpenLineage.IcebergCommitReportOutputDatasetFacetMetadataBuilder</a></span>&nbsp;<span class="element-name">newIcebergCommitReportOutputDatasetFacetMetadataBuilder</span>()</div>
-<div class="block">Creates a builder for IcebergCommitReportOutputDatasetFacetMetadata</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>a new builder for IcebergCommitReportOutputDatasetFacetMetadata</dd>
 </dl>
 </section>
 </li>
@@ -3914,80 +3860,6 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="newIcebergCommitReportOutputDatasetFacetCommitMetrics(java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double)">
-<h3>newIcebergCommitReportOutputDatasetFacetCommitMetrics</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.IcebergCommitReportOutputDatasetFacetCommitMetrics.html" title="class in io.openlineage.client">OpenLineage.IcebergCommitReportOutputDatasetFacetCommitMetrics</a></span>&nbsp;<span class="element-name">newIcebergCommitReportOutputDatasetFacetCommitMetrics</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;totalDuration,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;attempts,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;addedDataFiles,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;removedDataFiles,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;totalDataFiles,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;addedDeleteFiles,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;addedEqualityDeleteFiles,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;addedPositionalDeleteFiles,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;addedDVs,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;removedDeleteFiles,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;removedEqualityDeleteFiles,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;removedPositionalDeleteFiles,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;removedDVs,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;totalDeleteFiles,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;addedRecords,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;removedRecords,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;totalRecords,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;addedFilesSizeInBytes,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;removedFilesSizeInBytes,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;totalFilesSizeInBytes,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;addedPositionalDeletes,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;removedPositionalDeletes,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;totalPositionalDeletes,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;addedEqualityDeletes,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;removedEqualityDeletes,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;totalEqualityDeletes)</span></div>
-<div class="block">Factory method for IcebergCommitReportOutputDatasetFacetCommitMetrics</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>totalDuration</code> - Duration of the commit in MILLISECONDS</dd>
-<dd><code>attempts</code> - Number of attempts made to commit the iceberg table</dd>
-<dd><code>addedDataFiles</code> - Number of data files that are added during the commit</dd>
-<dd><code>removedDataFiles</code> - Number of data files that are removed during the commit</dd>
-<dd><code>totalDataFiles</code> - Total number of data files that are present in the iceberg table</dd>
-<dd><code>addedDeleteFiles</code> - Number of delete files that are added during the commit</dd>
-<dd><code>addedEqualityDeleteFiles</code> - Number of added equality delete files</dd>
-<dd><code>addedPositionalDeleteFiles</code> - Number of added positional delete files</dd>
-<dd><code>addedDVs</code> - Number of added DVs</dd>
-<dd><code>removedDeleteFiles</code> - Number of delete files that are removed during the commit</dd>
-<dd><code>removedEqualityDeleteFiles</code> - Number of removed equality delete files</dd>
-<dd><code>removedPositionalDeleteFiles</code> - Number of removed positional delete files</dd>
-<dd><code>removedDVs</code> - Number of removed DVs</dd>
-<dd><code>totalDeleteFiles</code> - Total number of temporary delete files that are present in the iceberg table</dd>
-<dd><code>addedRecords</code> - Number of records that are added during the commit</dd>
-<dd><code>removedRecords</code> - Number of records that are removed during the commit</dd>
-<dd><code>totalRecords</code> - Number of records that are present in the iceberg table</dd>
-<dd><code>addedFilesSizeInBytes</code> - Number of files size in bytes that are added during the commit</dd>
-<dd><code>removedFilesSizeInBytes</code> - Number of files size in bytes that are removed during the commit</dd>
-<dd><code>totalFilesSizeInBytes</code> - Number of files size in bytes in the iceberg table</dd>
-<dd><code>addedPositionalDeletes</code> - Number of positional deletes that are added during the commit</dd>
-<dd><code>removedPositionalDeletes</code> - Number of positional deletes that are removed during the commit</dd>
-<dd><code>totalPositionalDeletes</code> - Number of positional deletes that are present in the iceberg table</dd>
-<dd><code>addedEqualityDeletes</code> - Number of equality deletes that are added during the commit</dd>
-<dd><code>removedEqualityDeletes</code> - Number of equality deletes that are removed during the commit</dd>
-<dd><code>totalEqualityDeletes</code> - Number of equality deletes that are present in the iceberg table</dd>
-<dt>Returns:</dt>
-<dd>IcebergCommitReportOutputDatasetFacetCommitMetrics</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="newIcebergCommitReportOutputDatasetFacetCommitMetricsBuilder()">
-<h3>newIcebergCommitReportOutputDatasetFacetCommitMetricsBuilder</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.IcebergCommitReportOutputDatasetFacetCommitMetricsBuilder.html" title="class in io.openlineage.client">OpenLineage.IcebergCommitReportOutputDatasetFacetCommitMetricsBuilder</a></span>&nbsp;<span class="element-name">newIcebergCommitReportOutputDatasetFacetCommitMetricsBuilder</span>()</div>
-<div class="block">Creates a builder for IcebergCommitReportOutputDatasetFacetCommitMetrics</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>a new builder for IcebergCommitReportOutputDatasetFacetCommitMetrics</dd>
-</dl>
-</section>
-</li>
-<li>
 <section class="detail" id="newDatasetFacet()">
 <h3>newDatasetFacet</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.DatasetFacet.html" title="interface in io.openlineage.client">OpenLineage.DatasetFacet</a></span>&nbsp;<span class="element-name">newDatasetFacet</span>()</div>
@@ -4176,6 +4048,28 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
+<section class="detail" id="newIcebergCommitReportOutputDatasetFacetMetadata()">
+<h3>newIcebergCommitReportOutputDatasetFacetMetadata</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.IcebergCommitReportOutputDatasetFacetMetadata.html" title="class in io.openlineage.client">OpenLineage.IcebergCommitReportOutputDatasetFacetMetadata</a></span>&nbsp;<span class="element-name">newIcebergCommitReportOutputDatasetFacetMetadata</span>()</div>
+<div class="block">Factory method for IcebergCommitReportOutputDatasetFacetMetadata</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>IcebergCommitReportOutputDatasetFacetMetadata</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="newIcebergCommitReportOutputDatasetFacetMetadataBuilder()">
+<h3>newIcebergCommitReportOutputDatasetFacetMetadataBuilder</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.IcebergCommitReportOutputDatasetFacetMetadataBuilder.html" title="class in io.openlineage.client">OpenLineage.IcebergCommitReportOutputDatasetFacetMetadataBuilder</a></span>&nbsp;<span class="element-name">newIcebergCommitReportOutputDatasetFacetMetadataBuilder</span>()</div>
+<div class="block">Creates a builder for IcebergCommitReportOutputDatasetFacetMetadata</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a new builder for IcebergCommitReportOutputDatasetFacetMetadata</dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="newParentRunFacetJob(java.lang.String,java.lang.String)">
 <h3>newParentRunFacetJob</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.ParentRunFacetJob.html" title="class in io.openlineage.client">OpenLineage.ParentRunFacetJob</a></span>&nbsp;<span class="element-name">newParentRunFacetJob</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;namespace,
@@ -4252,6 +4146,80 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>a new builder for ErrorMessageRunFacet</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="newIcebergCommitReportOutputDatasetFacetCommitMetrics(java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double)">
+<h3>newIcebergCommitReportOutputDatasetFacetCommitMetrics</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.IcebergCommitReportOutputDatasetFacetCommitMetrics.html" title="class in io.openlineage.client">OpenLineage.IcebergCommitReportOutputDatasetFacetCommitMetrics</a></span>&nbsp;<span class="element-name">newIcebergCommitReportOutputDatasetFacetCommitMetrics</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;totalDuration,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;attempts,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;addedDataFiles,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;removedDataFiles,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;totalDataFiles,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;addedDeleteFiles,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;addedEqualityDeleteFiles,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;addedPositionalDeleteFiles,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;addedDVs,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;removedDeleteFiles,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;removedEqualityDeleteFiles,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;removedPositionalDeleteFiles,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;removedDVs,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;totalDeleteFiles,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;addedRecords,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;removedRecords,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;totalRecords,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;addedFilesSizeInBytes,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;removedFilesSizeInBytes,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;totalFilesSizeInBytes,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;addedPositionalDeletes,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;removedPositionalDeletes,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;totalPositionalDeletes,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;addedEqualityDeletes,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;removedEqualityDeletes,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;totalEqualityDeletes)</span></div>
+<div class="block">Factory method for IcebergCommitReportOutputDatasetFacetCommitMetrics</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>totalDuration</code> - Duration of the commit in MILLISECONDS</dd>
+<dd><code>attempts</code> - Number of attempts made to commit the iceberg table</dd>
+<dd><code>addedDataFiles</code> - Number of data files that are added during the commit</dd>
+<dd><code>removedDataFiles</code> - Number of data files that are removed during the commit</dd>
+<dd><code>totalDataFiles</code> - Total number of data files that are present in the iceberg table</dd>
+<dd><code>addedDeleteFiles</code> - Number of delete files that are added during the commit</dd>
+<dd><code>addedEqualityDeleteFiles</code> - Number of added equality delete files</dd>
+<dd><code>addedPositionalDeleteFiles</code> - Number of added positional delete files</dd>
+<dd><code>addedDVs</code> - Number of added DVs</dd>
+<dd><code>removedDeleteFiles</code> - Number of delete files that are removed during the commit</dd>
+<dd><code>removedEqualityDeleteFiles</code> - Number of removed equality delete files</dd>
+<dd><code>removedPositionalDeleteFiles</code> - Number of removed positional delete files</dd>
+<dd><code>removedDVs</code> - Number of removed DVs</dd>
+<dd><code>totalDeleteFiles</code> - Total number of temporary delete files that are present in the iceberg table</dd>
+<dd><code>addedRecords</code> - Number of records that are added during the commit</dd>
+<dd><code>removedRecords</code> - Number of records that are removed during the commit</dd>
+<dd><code>totalRecords</code> - Number of records that are present in the iceberg table</dd>
+<dd><code>addedFilesSizeInBytes</code> - Number of files size in bytes that are added during the commit</dd>
+<dd><code>removedFilesSizeInBytes</code> - Number of files size in bytes that are removed during the commit</dd>
+<dd><code>totalFilesSizeInBytes</code> - Number of files size in bytes in the iceberg table</dd>
+<dd><code>addedPositionalDeletes</code> - Number of positional deletes that are added during the commit</dd>
+<dd><code>removedPositionalDeletes</code> - Number of positional deletes that are removed during the commit</dd>
+<dd><code>totalPositionalDeletes</code> - Number of positional deletes that are present in the iceberg table</dd>
+<dd><code>addedEqualityDeletes</code> - Number of equality deletes that are added during the commit</dd>
+<dd><code>removedEqualityDeletes</code> - Number of equality deletes that are removed during the commit</dd>
+<dd><code>totalEqualityDeletes</code> - Number of equality deletes that are present in the iceberg table</dd>
+<dt>Returns:</dt>
+<dd>IcebergCommitReportOutputDatasetFacetCommitMetrics</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="newIcebergCommitReportOutputDatasetFacetCommitMetricsBuilder()">
+<h3>newIcebergCommitReportOutputDatasetFacetCommitMetricsBuilder</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.IcebergCommitReportOutputDatasetFacetCommitMetricsBuilder.html" title="class in io.openlineage.client">OpenLineage.IcebergCommitReportOutputDatasetFacetCommitMetricsBuilder</a></span>&nbsp;<span class="element-name">newIcebergCommitReportOutputDatasetFacetCommitMetricsBuilder</span>()</div>
+<div class="block">Creates a builder for IcebergCommitReportOutputDatasetFacetCommitMetrics</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a new builder for IcebergCommitReportOutputDatasetFacetCommitMetrics</dd>
 </dl>
 </section>
 </li>
@@ -4884,6 +4852,38 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>a new builder for DataQualityMetricsDatasetFacetColumnMetricsAdditionalQuantiles</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="newIcebergCommitReportOutputDatasetFacet(java.lang.Double,java.lang.Double,java.lang.String,io.openlineage.client.OpenLineage.IcebergCommitReportOutputDatasetFacetCommitMetrics,io.openlineage.client.OpenLineage.IcebergCommitReportOutputDatasetFacetMetadata)">
+<h3>newIcebergCommitReportOutputDatasetFacet</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.IcebergCommitReportOutputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.IcebergCommitReportOutputDatasetFacet</a></span>&nbsp;<span class="element-name">newIcebergCommitReportOutputDatasetFacet</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;snapshotId,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;sequenceNumber,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;operation,
+ <a href="OpenLineage.IcebergCommitReportOutputDatasetFacetCommitMetrics.html" title="class in io.openlineage.client">OpenLineage.IcebergCommitReportOutputDatasetFacetCommitMetrics</a>&nbsp;commitMetrics,
+ <a href="OpenLineage.IcebergCommitReportOutputDatasetFacetMetadata.html" title="class in io.openlineage.client">OpenLineage.IcebergCommitReportOutputDatasetFacetMetadata</a>&nbsp;metadata)</span></div>
+<div class="block">Factory method for IcebergCommitReportOutputDatasetFacet</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>snapshotId</code> - Snapshot ID of the iceberg table</dd>
+<dd><code>sequenceNumber</code> - Sequence number of the iceberg table</dd>
+<dd><code>operation</code> - Operation that was performed on the iceberg table</dd>
+<dd><code>commitMetrics</code> - the commitMetrics</dd>
+<dd><code>metadata</code> - the metadata</dd>
+<dt>Returns:</dt>
+<dd>IcebergCommitReportOutputDatasetFacet</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="newIcebergCommitReportOutputDatasetFacetBuilder()">
+<h3>newIcebergCommitReportOutputDatasetFacetBuilder</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.IcebergCommitReportOutputDatasetFacetBuilder.html" title="class in io.openlineage.client">OpenLineage.IcebergCommitReportOutputDatasetFacetBuilder</a></span>&nbsp;<span class="element-name">newIcebergCommitReportOutputDatasetFacetBuilder</span>()</div>
+<div class="block">Creates a builder for IcebergCommitReportOutputDatasetFacet</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a new builder for IcebergCommitReportOutputDatasetFacet</dd>
 </dl>
 </section>
 </li>
