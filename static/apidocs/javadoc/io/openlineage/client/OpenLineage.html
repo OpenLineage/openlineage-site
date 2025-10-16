@@ -1634,7 +1634,7 @@ loadScripts(document, 'script');</script>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OpenLineage.IcebergScanReportInputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.IcebergScanReportInputDatasetFacet</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newIcebergScanReportInputDatasetFacet(java.lang.Double,java.lang.String,java.lang.Double,java.util.List,io.openlineage.client.OpenLineage.IcebergScanReportInputDatasetFacetScanMetrics,io.openlineage.client.OpenLineage.IcebergScanReportInputDatasetFacetMetadata)" class="member-name-link">newIcebergScanReportInputDatasetFacet</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;snapshotId,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;filter,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;filterDescription,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;schemaId,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;projectedFieldNames,
  <a href="OpenLineage.IcebergScanReportInputDatasetFacetScanMetrics.html" title="class in io.openlineage.client">OpenLineage.IcebergScanReportInputDatasetFacetScanMetrics</a>&nbsp;scanMetrics,
@@ -1703,7 +1703,7 @@ loadScripts(document, 'script');</script>
  <a href="OpenLineage.InputStatisticsInputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.InputStatisticsInputDatasetFacet</a>&nbsp;inputStatistics,
  <a href="OpenLineage.DataQualityMetricsInputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.DataQualityMetricsInputDatasetFacet</a>&nbsp;dataQualityMetrics,
  <a href="OpenLineage.InputSubsetInputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.InputSubsetInputDatasetFacet</a>&nbsp;subset,
- <a href="OpenLineage.IcebergScanReportInputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.IcebergScanReportInputDatasetFacet</a>&nbsp;iceberg_scan_report)</code></div>
+ <a href="OpenLineage.IcebergScanReportInputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.IcebergScanReportInputDatasetFacet</a>&nbsp;icebergScanReport)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Factory method for InputDatasetInputFacets</div>
 </div>
@@ -1889,7 +1889,7 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OpenLineage.OutputDatasetOutputFacets.html" title="class in io.openlineage.client">OpenLineage.OutputDatasetOutputFacets</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newOutputDatasetOutputFacets(io.openlineage.client.OpenLineage.OutputStatisticsOutputDatasetFacet,io.openlineage.client.OpenLineage.IcebergCommitReportOutputDatasetFacet)" class="member-name-link">newOutputDatasetOutputFacets</a><wbr>(<a href="OpenLineage.OutputStatisticsOutputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.OutputStatisticsOutputDatasetFacet</a>&nbsp;outputStatistics,
- <a href="OpenLineage.IcebergCommitReportOutputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.IcebergCommitReportOutputDatasetFacet</a>&nbsp;iceberg_commit_report)</code></div>
+ <a href="OpenLineage.IcebergCommitReportOutputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.IcebergCommitReportOutputDatasetFacet</a>&nbsp;icebergCommitReport)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Factory method for OutputDatasetOutputFacets</div>
 </div>
@@ -2621,12 +2621,12 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="newOutputDatasetOutputFacets(io.openlineage.client.OpenLineage.OutputStatisticsOutputDatasetFacet,io.openlineage.client.OpenLineage.IcebergCommitReportOutputDatasetFacet)">
 <h3>newOutputDatasetOutputFacets</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.OutputDatasetOutputFacets.html" title="class in io.openlineage.client">OpenLineage.OutputDatasetOutputFacets</a></span>&nbsp;<span class="element-name">newOutputDatasetOutputFacets</span><wbr><span class="parameters">(<a href="OpenLineage.OutputStatisticsOutputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.OutputStatisticsOutputDatasetFacet</a>&nbsp;outputStatistics,
- <a href="OpenLineage.IcebergCommitReportOutputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.IcebergCommitReportOutputDatasetFacet</a>&nbsp;iceberg_commit_report)</span></div>
+ <a href="OpenLineage.IcebergCommitReportOutputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.IcebergCommitReportOutputDatasetFacet</a>&nbsp;icebergCommitReport)</span></div>
 <div class="block">Factory method for OutputDatasetOutputFacets</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>outputStatistics</code> - the outputStatistics</dd>
-<dd><code>iceberg_commit_report</code> - the iceberg_commit_report</dd>
+<dd><code>icebergCommitReport</code> - the icebergCommitReport</dd>
 <dt>Returns:</dt>
 <dd>OutputDatasetOutputFacets</dd>
 </dl>
@@ -2856,7 +2856,7 @@ loadScripts(document, 'script');</script>
  <a href="OpenLineage.InputStatisticsInputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.InputStatisticsInputDatasetFacet</a>&nbsp;inputStatistics,
  <a href="OpenLineage.DataQualityMetricsInputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.DataQualityMetricsInputDatasetFacet</a>&nbsp;dataQualityMetrics,
  <a href="OpenLineage.InputSubsetInputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.InputSubsetInputDatasetFacet</a>&nbsp;subset,
- <a href="OpenLineage.IcebergScanReportInputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.IcebergScanReportInputDatasetFacet</a>&nbsp;iceberg_scan_report)</span></div>
+ <a href="OpenLineage.IcebergScanReportInputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.IcebergScanReportInputDatasetFacet</a>&nbsp;icebergScanReport)</span></div>
 <div class="block">Factory method for InputDatasetInputFacets</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -2864,7 +2864,7 @@ loadScripts(document, 'script');</script>
 <dd><code>inputStatistics</code> - the inputStatistics</dd>
 <dd><code>dataQualityMetrics</code> - the dataQualityMetrics</dd>
 <dd><code>subset</code> - the subset</dd>
-<dd><code>iceberg_scan_report</code> - the iceberg_scan_report</dd>
+<dd><code>icebergScanReport</code> - the icebergScanReport</dd>
 <dt>Returns:</dt>
 <dd>InputDatasetInputFacets</dd>
 </dl>
@@ -3125,7 +3125,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="newIcebergScanReportInputDatasetFacet(java.lang.Double,java.lang.String,java.lang.Double,java.util.List,io.openlineage.client.OpenLineage.IcebergScanReportInputDatasetFacetScanMetrics,io.openlineage.client.OpenLineage.IcebergScanReportInputDatasetFacetMetadata)">
 <h3>newIcebergScanReportInputDatasetFacet</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.IcebergScanReportInputDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.IcebergScanReportInputDatasetFacet</a></span>&nbsp;<span class="element-name">newIcebergScanReportInputDatasetFacet</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;snapshotId,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;filter,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;filterDescription,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&nbsp;schemaId,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;projectedFieldNames,
  <a href="OpenLineage.IcebergScanReportInputDatasetFacetScanMetrics.html" title="class in io.openlineage.client">OpenLineage.IcebergScanReportInputDatasetFacetScanMetrics</a>&nbsp;scanMetrics,
@@ -3134,7 +3134,7 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>snapshotId</code> - Snapshot ID of the iceberg table</dd>
-<dd><code>filter</code> - Filter used to scan the iceberg table</dd>
+<dd><code>filterDescription</code> - Filter used to scan the iceberg table</dd>
 <dd><code>schemaId</code> - Schema ID of the iceberg table</dd>
 <dd><code>projectedFieldNames</code> - List of field names that are projected from the iceberg table</dd>
 <dd><code>scanMetrics</code> - the scanMetrics</dd>
