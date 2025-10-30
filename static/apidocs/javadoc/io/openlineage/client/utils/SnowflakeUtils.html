@@ -111,6 +111,11 @@ loadScripts(document, 'script');</script>
 <div class="block">Parses the Snowflake full URL to extract the account identifier according to OpenLineage naming
  specification.</div>
 </div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#stripQuotes(java.lang.String)" class="member-name-link">stripQuotes</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;identifier)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Strips surrounding double quotes from Snowflake identifiers if present.</div>
+</div>
 </div>
 </div>
 </div>
@@ -181,6 +186,33 @@ loadScripts(document, 'script');</script>
 <dd><code>sfFullURL</code> - The full Snowflake URL or account identifier</dd>
 <dt>Returns:</dt>
 <dd>The account identifier according to OpenLineage spec</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="stripQuotes(java.lang.String)">
+<h3>stripQuotes</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">stripQuotes</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;identifier)</span></div>
+<div class="block">Strips surrounding double quotes from Snowflake identifiers if present.
+
+ <p>In Snowflake and other SQL databases, double quotes are used as delimiters to preserve case
+ sensitivity or allow special characters in identifiers. The quotes are not part of the actual
+ identifier name and should be removed for normalized dataset and column names.
+
+ <p>Examples:
+
+ <ul>
+   <li>"MyTable" → MyTable
+   <li>"my_database" → my_database
+   <li>normal_table → normal_table (no change)
+   <li>"" → (empty string)
+   <li>" → " (single quote, not stripped)
+ </ul></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>identifier</code> - The identifier that may have surrounding quotes</dd>
+<dt>Returns:</dt>
+<dd>The identifier with surrounding quotes removed if present</dd>
 </dl>
 </section>
 </li>
