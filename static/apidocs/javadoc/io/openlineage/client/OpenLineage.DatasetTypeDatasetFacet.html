@@ -188,7 +188,7 @@ implements <a href="OpenLineage.DatasetFacet.html" title="interface in io.openli
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getDatasetType</span>()</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>Dataset type, for example: FILE|STREAM|MODEL|TABLE|VIEW.</dd>
+<dd>Dataset type, for example: TABLE|VIEW|FILE|TOPIC|STREAM|MODEL|JOB_OUTPUT.</dd>
 </dl>
 </section>
 </li>
@@ -198,7 +198,7 @@ implements <a href="OpenLineage.DatasetFacet.html" title="interface in io.openli
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getSubType</span>()</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>Optional sub-type within the dataset type (e.g., BEST VALIDATION under MODEL CHECKPOINT).</dd>
+<dd>Optional sub-type within the dataset type (e.g., MATERIALIZED, EXTERNAL, TEMPORARY).</dd>
 </dl>
 </section>
 </li>

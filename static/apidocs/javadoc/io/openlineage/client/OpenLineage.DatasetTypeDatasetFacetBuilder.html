@@ -169,7 +169,7 @@ implements <a href="OpenLineage.Builder.html" title="interface in io.openlineage
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.DatasetTypeDatasetFacetBuilder.html" title="class in io.openlineage.client">OpenLineage.DatasetTypeDatasetFacetBuilder</a></span>&nbsp;<span class="element-name">datasetType</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;datasetType)</span></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>datasetType</code> - Dataset type, for example: FILE|STREAM|MODEL|TABLE|VIEW.</dd>
+<dd><code>datasetType</code> - Dataset type, for example: TABLE|VIEW|FILE|TOPIC|STREAM|MODEL|JOB_OUTPUT.</dd>
 <dt>Returns:</dt>
 <dd>this</dd>
 </dl>
@@ -181,7 +181,7 @@ implements <a href="OpenLineage.Builder.html" title="interface in io.openlineage
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.DatasetTypeDatasetFacetBuilder.html" title="class in io.openlineage.client">OpenLineage.DatasetTypeDatasetFacetBuilder</a></span>&nbsp;<span class="element-name">subType</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;subType)</span></div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>subType</code> - Optional sub-type within the dataset type (e.g., BEST VALIDATION under MODEL CHECKPOINT).</dd>
+<dd><code>subType</code> - Optional sub-type within the dataset type (e.g., MATERIALIZED, EXTERNAL, TEMPORARY).</dd>
 <dt>Returns:</dt>
 <dd>this</dd>
 </dl>
