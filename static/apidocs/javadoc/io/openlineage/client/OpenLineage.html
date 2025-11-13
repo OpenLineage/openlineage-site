@@ -2217,9 +2217,10 @@ loadScripts(document, 'script');</script>
 <div class="block">Creates a builder for SchemaDatasetFacet</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OpenLineage.SchemaDatasetFacetFields.html" title="class in io.openlineage.client">OpenLineage.SchemaDatasetFacetFields</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newSchemaDatasetFacetFields(java.lang.String,java.lang.String,java.lang.String,java.util.List)" class="member-name-link">newSchemaDatasetFacetFields</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newSchemaDatasetFacetFields(java.lang.String,java.lang.String,java.lang.String,java.lang.Long,java.util.List)" class="member-name-link">newSchemaDatasetFacetFields</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;type,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;description,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Long.html" title="class or interface in java.lang" class="external-link">Long</a>&nbsp;ordinal_position,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="OpenLineage.SchemaDatasetFacetFields.html" title="class in io.openlineage.client">OpenLineage.SchemaDatasetFacetFields</a>&gt;&nbsp;fields)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Factory method for SchemaDatasetFacetFields</div>
@@ -2416,11 +2417,12 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="newSchemaDatasetFacetFields(java.lang.String,java.lang.String,java.lang.String,java.util.List)">
+<section class="detail" id="newSchemaDatasetFacetFields(java.lang.String,java.lang.String,java.lang.String,java.lang.Long,java.util.List)">
 <h3>newSchemaDatasetFacetFields</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.SchemaDatasetFacetFields.html" title="class in io.openlineage.client">OpenLineage.SchemaDatasetFacetFields</a></span>&nbsp;<span class="element-name">newSchemaDatasetFacetFields</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;type,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;description,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Long.html" title="class or interface in java.lang" class="external-link">Long</a>&nbsp;ordinal_position,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="OpenLineage.SchemaDatasetFacetFields.html" title="class in io.openlineage.client">OpenLineage.SchemaDatasetFacetFields</a>&gt;&nbsp;fields)</span></div>
 <div class="block">Factory method for SchemaDatasetFacetFields</div>
 <dl class="notes">
@@ -2428,6 +2430,7 @@ loadScripts(document, 'script');</script>
 <dd><code>name</code> - The name of the field.</dd>
 <dd><code>type</code> - The type of the field.</dd>
 <dd><code>description</code> - The description of the field.</dd>
+<dd><code>ordinal_position</code> - The ordinal position of the field in the schema (1-indexed).</dd>
 <dd><code>fields</code> - Nested struct fields.</dd>
 <dt>Returns:</dt>
 <dd>SchemaDatasetFacetFields</dd>
