@@ -23,10 +23,17 @@ jobs:
           node-version: 22
           cache: "npm"
           cache-dependency-path: package-lock.json
+      - name: Cache Docusaurus incremental build cache
+        uses: actions/cache@v4
+        with:
+          path: node_modules/.cache
+          key: docusaurus-incremental-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            docusaurus-incremental-${{ runner.os }}-
       - name: Install dependencies
         run: yarn install --frozen-lockfile
-      - name: Build website
-        run:  yarn build
+      - name: Build website with increased memory
+        run: NODE_OPTIONS="--max-old-space-size=4096" yarn build
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
