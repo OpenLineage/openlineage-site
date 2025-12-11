@@ -127,14 +127,20 @@ implements <a href="OpenLineage.Builder.html" title="interface in io.openlineage
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#job(io.openlineage.client.OpenLineage.JobIdentifier)" class="member-name-link">job</a><wbr>(<a href="OpenLineage.JobIdentifier.html" title="class in io.openlineage.client">OpenLineage.JobIdentifier</a>&nbsp;job)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OpenLineage.JobDependencyBuilder.html" title="class in io.openlineage.client">OpenLineage.JobDependencyBuilder</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#run(io.openlineage.client.OpenLineage.RunIdentifier)" class="member-name-link">run</a><wbr>(<a href="OpenLineage.RunIdentifier.html" title="class in io.openlineage.client">OpenLineage.RunIdentifier</a>&nbsp;run)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#put(java.lang.String,java.lang.Object)" class="member-name-link">put</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;value)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">add additional properties</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OpenLineage.JobDependencyBuilder.html" title="class in io.openlineage.client">OpenLineage.JobDependencyBuilder</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#sequence_trigger_rule(java.lang.String)" class="member-name-link">sequence_trigger_rule</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;sequence_trigger_rule)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#run(io.openlineage.client.OpenLineage.RunIdentifier)" class="member-name-link">run</a><wbr>(<a href="OpenLineage.RunIdentifier.html" title="class in io.openlineage.client">OpenLineage.RunIdentifier</a>&nbsp;run)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OpenLineage.JobDependencyBuilder.html" title="class in io.openlineage.client">OpenLineage.JobDependencyBuilder</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#status_trigger_rule(java.lang.String)" class="member-name-link">status_trigger_rule</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;status_trigger_rule)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#sequence_trigger_rule(java.lang.String)" class="member-name-link">sequence_trigger_rule</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;sequence_trigger_rule)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OpenLineage.JobDependencyBuilder.html" title="class in io.openlineage.client">OpenLineage.JobDependencyBuilder</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#status_trigger_rule(java.lang.String)" class="member-name-link">status_trigger_rule</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;status_trigger_rule)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -221,6 +227,21 @@ implements <a href="OpenLineage.Builder.html" title="interface in io.openlineage
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>status_trigger_rule</code> - Used to describe if the downstream job should be run based on the status of the upstream job.</dd>
+<dt>Returns:</dt>
+<dd>this</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="put(java.lang.String,java.lang.Object)">
+<h3>put</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.JobDependencyBuilder.html" title="class in io.openlineage.client">OpenLineage.JobDependencyBuilder</a></span>&nbsp;<span class="element-name">put</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;value)</span></div>
+<div class="block">add additional properties</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>key</code> - the additional property name</dd>
+<dd><code>value</code> - the additional property value</dd>
 <dt>Returns:</dt>
 <dd>this</dd>
 </dl>
