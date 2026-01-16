@@ -1273,9 +1273,10 @@ loadScripts(document, 'script');</script>
 <div class="block">Factory method for DataQualityAssertionsDatasetFacet</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OpenLineage.DataQualityAssertionsDatasetFacetAssertions.html" title="class in io.openlineage.client">OpenLineage.DataQualityAssertionsDatasetFacetAssertions</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newDataQualityAssertionsDatasetFacetAssertions(java.lang.String,java.lang.Boolean,java.lang.String)" class="member-name-link">newDataQualityAssertionsDatasetFacetAssertions</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;assertion,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newDataQualityAssertionsDatasetFacetAssertions(java.lang.String,java.lang.Boolean,java.lang.String,java.lang.String)" class="member-name-link">newDataQualityAssertionsDatasetFacetAssertions</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;assertion,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&nbsp;success,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;column)</code></div>
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;column,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;severity)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Factory method for DataQualityAssertionsDatasetFacetAssertions</div>
 </div>
@@ -4987,17 +4988,19 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="newDataQualityAssertionsDatasetFacetAssertions(java.lang.String,java.lang.Boolean,java.lang.String)">
+<section class="detail" id="newDataQualityAssertionsDatasetFacetAssertions(java.lang.String,java.lang.Boolean,java.lang.String,java.lang.String)">
 <h3>newDataQualityAssertionsDatasetFacetAssertions</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.DataQualityAssertionsDatasetFacetAssertions.html" title="class in io.openlineage.client">OpenLineage.DataQualityAssertionsDatasetFacetAssertions</a></span>&nbsp;<span class="element-name">newDataQualityAssertionsDatasetFacetAssertions</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;assertion,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&nbsp;success,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;column)</span></div>
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;column,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;severity)</span></div>
 <div class="block">Factory method for DataQualityAssertionsDatasetFacetAssertions</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>assertion</code> - Type of expectation test that dataset is subjected to</dd>
 <dd><code>success</code> - the success</dd>
 <dd><code>column</code> - Column that expectation is testing. It should match the name provided in SchemaDatasetFacet. If column field is empty, then expectation refers to whole dataset.</dd>
+<dd><code>severity</code> - The configured severity level of the assertion. Common values are 'error' (test failure blocks pipeline) or 'warn' (test failure produces warning only).</dd>
 <dt>Returns:</dt>
 <dd>DataQualityAssertionsDatasetFacetAssertions</dd>
 </dl>
