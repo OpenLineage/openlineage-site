@@ -5967,12 +5967,12 @@ __metadata:
   linkType: hard
 
 "convict@npm:^6.2.4":
-  version: 6.2.4
-  resolution: "convict@npm:6.2.4"
+  version: 6.2.5
+  resolution: "convict@npm:6.2.5"
   dependencies:
     lodash.clonedeep: "npm:^4.5.0"
     yargs-parser: "npm:^20.2.7"
-  checksum: 10c0/82d4cd93bfe028948f4b145562d4a1650881952d0e4b615b014bbcdf3e5caaad6f5dc12b647eeb82c135eba1ce1a0922f7823c34d17162646f7030dc002985ad
+  checksum: 10c0/4773180a3d02eb9d5cf6a3b6ec2b6bc94e6b8dd5073cbf6035cb55f615286835af1fe7f549aee085909a1130f6b461476f9b6a0d1fdbdee733402289e5196c1e
   languageName: node
   linkType: hard
 
@@ -11192,9 +11192,9 @@ __metadata:
   linkType: hard
 
 "picomatch@npm:^2.0.4, picomatch@npm:^2.2.1, picomatch@npm:^2.2.3, picomatch@npm:^2.3.1":
-  version: 2.3.1
-  resolution: "picomatch@npm:2.3.1"
-  checksum: 10c0/26c02b8d06f03206fc2ab8d16f19960f2ff9e81a658f831ecb656d8f17d9edc799e8364b1f4a7873e89d9702dff96204be0fa26fe4181f6843f040f819dac4be
+  version: 2.3.2
+  resolution: "picomatch@npm:2.3.2"
+  checksum: 10c0/a554d1709e59be97d1acb9eaedbbc700a5c03dbd4579807baed95100b00420bc729335440ef15004ae2378984e2487a7c1cebd743cfdb72b6fa9ab69223c0d61
   languageName: node
   linkType: hard
 
