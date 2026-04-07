@@ -5131,8 +5131,8 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>name</code> - Name identifying the test.</dd>
-<dd><code>status</code> - The actual outcome of the test execution. Common values: 'pass' (test succeeded), 'fail' (test found issues), 'skip' (test was not executed).</dd>
-<dd><code>severity</code> - The configured severity level of the test. Determines whether a failure blocks pipeline execution ('error') or produces a warning only ('warn').</dd>
+<dd><code>status</code> - Whether the test found issues: 'pass' (no issues found), 'fail' (issues found), 'skip' (not executed). Independent of severity — a test can fail without blocking the pipeline when severity is 'warn'.</dd>
+<dd><code>severity</code> - The configured consequence of a test failure: 'error' (blocks pipeline execution) or 'warn' (produces a warning only, does not block). A test with severity 'warn' and status 'fail' means issues were found but execution continued.</dd>
 <dd><code>type</code> - Classification of the test, e.g. 'not_null', 'unique', 'row_count', 'freshness', 'custom_sql'.</dd>
 <dd><code>description</code> - Human-readable description of what the test checks.</dd>
 <dd><code>expected</code> - The expected value or threshold for the test, serialized as a string.</dd>
