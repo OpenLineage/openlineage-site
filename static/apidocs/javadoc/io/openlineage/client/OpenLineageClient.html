@@ -164,8 +164,14 @@ implements <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base
 <div class="block">Emit the given run event to HTTP backend.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#initializeMetrics()" class="member-name-link">initializeMetrics</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#emit(io.openlineage.client.OpenLineage.RunEvent,java.time.Duration)" class="member-name-link">emit</a><wbr>(<a href="OpenLineage.RunEvent.html" title="class in io.openlineage.client">OpenLineage.RunEvent</a>&nbsp;runEvent,
+ @NonNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a>&nbsp;timeout)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Emit the given run event with a bounded wait when supported by the configured transport.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#initializeMetrics()" class="member-name-link">initializeMetrics</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -233,6 +239,24 @@ implements <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>runEvent</code> - The run event to emit.</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="emit(io.openlineage.client.OpenLineage.RunEvent,java.time.Duration)">
+<h3>emit</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">emit</span><wbr><span class="parameters">(@NonNull
+ <a href="OpenLineage.RunEvent.html" title="class in io.openlineage.client">OpenLineage.RunEvent</a>&nbsp;runEvent,
+ @NonNull
+ @NonNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a>&nbsp;timeout)</span></div>
+<div class="block">Emit the given run event with a bounded wait when supported by the configured transport.
+
+ <p>Transports that do not support bounded delivery acknowledgement may fall back to regular
+ asynchronous emit semantics.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>runEvent</code> - The run event to emit.</dd>
+<dd><code>timeout</code> - Maximum time to wait for transports that support bounded delivery.</dd>
 </dl>
 </section>
 </li>
