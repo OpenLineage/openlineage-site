@@ -13257,7 +13257,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["launch-editor", "npm:2.12.0"],\
           ["picocolors", "npm:1.1.1"],\
-          ["shell-quote", "npm:1.8.3"]\
+          ["shell-quote", "npm:1.8.4"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -18783,10 +18783,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["shell-quote", [\
-      ["npm:1.8.3", {\
-        "packageLocation": "../../../../.yarn/berry/cache/shell-quote-npm-1.8.3-b29f851134-10c0.zip/node_modules/shell-quote/",\
+      ["npm:1.8.4", {\
+        "packageLocation": "../../../../.yarn/berry/cache/shell-quote-npm-1.8.4-13eacaabff-10c0.zip/node_modules/shell-quote/",\
         "packageDependencies": [\
-          ["shell-quote", "npm:1.8.3"]\
+          ["shell-quote", "npm:1.8.4"]\
         ],\
         "linkType": "HARD"\
       }]\
