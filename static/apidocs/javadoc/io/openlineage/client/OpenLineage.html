@@ -756,6 +756,16 @@ loadScripts(document, 'script');</script>
 <div class="block">builder class for JobTypeJobFacet</div>
 </div>
 <div class="col-first even-row-color"><code>static final class&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="OpenLineage.JobTypeJobFacetEmissionPattern.html" class="type-name-link" title="class in io.openlineage.client">OpenLineage.JobTypeJobFacetEmissionPattern</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">model class for JobTypeJobFacetEmissionPattern</div>
+</div>
+<div class="col-first odd-row-color"><code>static final class&nbsp;</code></div>
+<div class="col-second odd-row-color"><code><a href="OpenLineage.JobTypeJobFacetEmissionPatternBuilder.html" class="type-name-link" title="class in io.openlineage.client">OpenLineage.JobTypeJobFacetEmissionPatternBuilder</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block">builder class for JobTypeJobFacetEmissionPattern</div>
+</div>
+<div class="col-first even-row-color"><code>static final class&nbsp;</code></div>
 <div class="col-second even-row-color"><code><a href="OpenLineage.LifecycleStateChangeDatasetFacet.html" class="type-name-link" title="class in io.openlineage.client">OpenLineage.LifecycleStateChangeDatasetFacet</a></code></div>
 <div class="col-last even-row-color">
 <div class="block">model class for LifecycleStateChangeDatasetFacet</div>
@@ -2027,9 +2037,10 @@ loadScripts(document, 'script');</script>
 <div class="block">Creates a builder for JobIdentifier</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OpenLineage.JobTypeJobFacet.html" title="class in io.openlineage.client">OpenLineage.JobTypeJobFacet</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newJobTypeJobFacet(java.lang.String,java.lang.String,java.lang.String)" class="member-name-link">newJobTypeJobFacet</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;processingType,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newJobTypeJobFacet(java.lang.String,java.lang.String,java.lang.String,io.openlineage.client.OpenLineage.JobTypeJobFacetEmissionPattern)" class="member-name-link">newJobTypeJobFacet</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;processingType,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;integration,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;jobType)</code></div>
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;jobType,
+ <a href="OpenLineage.JobTypeJobFacetEmissionPattern.html" title="class in io.openlineage.client">OpenLineage.JobTypeJobFacetEmissionPattern</a>&nbsp;emissionPattern)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Factory method for JobTypeJobFacet</div>
 </div>
@@ -2037,6 +2048,18 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newJobTypeJobFacetBuilder()" class="member-name-link">newJobTypeJobFacetBuilder</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Creates a builder for JobTypeJobFacet</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OpenLineage.JobTypeJobFacetEmissionPattern.html" title="class in io.openlineage.client">OpenLineage.JobTypeJobFacetEmissionPattern</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newJobTypeJobFacetEmissionPattern(java.lang.String,java.lang.String,java.lang.Long)" class="member-name-link">newJobTypeJobFacetEmissionPattern</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;eventTrigger,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;eventContentMode,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Long.html" title="class or interface in java.lang" class="external-link">Long</a>&nbsp;windowDuration)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Factory method for JobTypeJobFacetEmissionPattern</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OpenLineage.JobTypeJobFacetEmissionPatternBuilder.html" title="class in io.openlineage.client">OpenLineage.JobTypeJobFacetEmissionPatternBuilder</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newJobTypeJobFacetEmissionPatternBuilder()" class="member-name-link">newJobTypeJobFacetEmissionPatternBuilder</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Creates a builder for JobTypeJobFacetEmissionPattern</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OpenLineage.LifecycleStateChangeDatasetFacet.html" title="class in io.openlineage.client">OpenLineage.LifecycleStateChangeDatasetFacet</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newLifecycleStateChangeDatasetFacet(io.openlineage.client.OpenLineage.LifecycleStateChangeDatasetFacet.LifecycleStateChange,io.openlineage.client.OpenLineage.LifecycleStateChangeDatasetFacetPreviousIdentifier)" class="member-name-link">newLifecycleStateChangeDatasetFacet</a><wbr>(<a href="OpenLineage.LifecycleStateChangeDatasetFacet.LifecycleStateChange.html" title="enum class in io.openlineage.client">OpenLineage.LifecycleStateChangeDatasetFacet.LifecycleStateChange</a>&nbsp;lifecycleStateChange,
@@ -2744,17 +2767,19 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="newJobTypeJobFacet(java.lang.String,java.lang.String,java.lang.String)">
+<section class="detail" id="newJobTypeJobFacet(java.lang.String,java.lang.String,java.lang.String,io.openlineage.client.OpenLineage.JobTypeJobFacetEmissionPattern)">
 <h3>newJobTypeJobFacet</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.JobTypeJobFacet.html" title="class in io.openlineage.client">OpenLineage.JobTypeJobFacet</a></span>&nbsp;<span class="element-name">newJobTypeJobFacet</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;processingType,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;integration,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;jobType)</span></div>
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;jobType,
+ <a href="OpenLineage.JobTypeJobFacetEmissionPattern.html" title="class in io.openlineage.client">OpenLineage.JobTypeJobFacetEmissionPattern</a>&nbsp;emissionPattern)</span></div>
 <div class="block">Factory method for JobTypeJobFacet</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>processingType</code> - Job processing type like: BATCH or STREAMING</dd>
+<dd><code>processingType</code> - Job processing type: BATCH (finite jobs with clear start/end), STREAMING (continuous jobs processing data streams), or SERVICE (continuous long-running services). BATCH jobs are finite and emit START/COMPLETE/FAIL/ABORT events. STREAMING and SERVICE jobs are continuous with no natural completion point.</dd>
 <dd><code>integration</code> - OpenLineage integration type of this job: for example SPARK|DBT|AIRFLOW|FLINK</dd>
 <dd><code>jobType</code> - Run type, for example: QUERY|COMMAND|DAG|TASK|JOB|MODEL. This is an integration-specific field.</dd>
+<dd><code>emissionPattern</code> - Describes how and what the job emits in its events</dd>
 <dt>Returns:</dt>
 <dd>JobTypeJobFacet</dd>
 </dl>
@@ -2890,6 +2915,34 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>a new builder for DataQualityMetricsInputDatasetFacetColumnMetricsAdditionalQuantiles</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="newJobTypeJobFacetEmissionPattern(java.lang.String,java.lang.String,java.lang.Long)">
+<h3>newJobTypeJobFacetEmissionPattern</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.JobTypeJobFacetEmissionPattern.html" title="class in io.openlineage.client">OpenLineage.JobTypeJobFacetEmissionPattern</a></span>&nbsp;<span class="element-name">newJobTypeJobFacetEmissionPattern</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;eventTrigger,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;eventContentMode,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Long.html" title="class or interface in java.lang" class="external-link">Long</a>&nbsp;windowDuration)</span></div>
+<div class="block">Factory method for JobTypeJobFacetEmissionPattern</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>eventTrigger</code> - Defines when events are emitted. EVENT_BASED: events emitted on lifecycle transitions (START/COMPLETE/FAIL/ABORT). PERIODIC: events emitted at regular time intervals.</dd>
+<dd><code>eventContentMode</code> - Define if individual events are self-sufficient and can be processed individually, or need to be combined by consumer. ACCUMULATIVE: Events may contain only partial information and the complete information can be collected by combining information from all the events emitted by a specific job run. COMPLETE_SNAPSHOT: events contain complete state for a specific time window (events can be processed independently).</dd>
+<dd><code>windowDuration</code> - Time window duration for periodic event emissions in seconds. Only applicable when eventTrigger is PERIODIC. Required when eventTrigger is PERIODIC and eventContentMode is COMPLETE_SNAPSHOT.</dd>
+<dt>Returns:</dt>
+<dd>JobTypeJobFacetEmissionPattern</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="newJobTypeJobFacetEmissionPatternBuilder()">
+<h3>newJobTypeJobFacetEmissionPatternBuilder</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.JobTypeJobFacetEmissionPatternBuilder.html" title="class in io.openlineage.client">OpenLineage.JobTypeJobFacetEmissionPatternBuilder</a></span>&nbsp;<span class="element-name">newJobTypeJobFacetEmissionPatternBuilder</span>()</div>
+<div class="block">Creates a builder for JobTypeJobFacetEmissionPattern</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a new builder for JobTypeJobFacetEmissionPattern</dd>
 </dl>
 </section>
 </li>
