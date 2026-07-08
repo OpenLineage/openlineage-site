@@ -121,11 +121,14 @@ implements <a href="OpenLineage.Builder.html" title="interface in io.openlineage
 <div class="block">build an instance of ParentRunFacetJob from the fields set in the builder</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OpenLineage.ParentRunFacetJobBuilder.html" title="class in io.openlineage.client">OpenLineage.ParentRunFacetJobBuilder</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#name(java.lang.String)" class="member-name-link">name</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#facets(io.openlineage.client.OpenLineage.ParentRunFacetJobFacets)" class="member-name-link">facets</a><wbr>(<a href="OpenLineage.ParentRunFacetJobFacets.html" title="class in io.openlineage.client">OpenLineage.ParentRunFacetJobFacets</a>&nbsp;facets)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OpenLineage.ParentRunFacetJobBuilder.html" title="class in io.openlineage.client">OpenLineage.ParentRunFacetJobBuilder</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#namespace(java.lang.String)" class="member-name-link">namespace</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;namespace)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#name(java.lang.String)" class="member-name-link">name</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OpenLineage.ParentRunFacetJobBuilder.html" title="class in io.openlineage.client">OpenLineage.ParentRunFacetJobBuilder</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#namespace(java.lang.String)" class="member-name-link">namespace</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;namespace)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -176,6 +179,18 @@ implements <a href="OpenLineage.Builder.html" title="interface in io.openlineage
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>name</code> - The unique name for that job within that namespace</dd>
+<dt>Returns:</dt>
+<dd>this</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="facets(io.openlineage.client.OpenLineage.ParentRunFacetJobFacets)">
+<h3>facets</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.ParentRunFacetJobBuilder.html" title="class in io.openlineage.client">OpenLineage.ParentRunFacetJobBuilder</a></span>&nbsp;<span class="element-name">facets</span><wbr><span class="parameters">(<a href="OpenLineage.ParentRunFacetJobFacets.html" title="class in io.openlineage.client">OpenLineage.ParentRunFacetJobFacets</a>&nbsp;facets)</span></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>facets</code> - Selected subset of facets of the parent job (not the current job), forwarded here for convenience. See the parent job's own event for full information.</dd>
 <dt>Returns:</dt>
 <dd>this</dd>
 </dl>

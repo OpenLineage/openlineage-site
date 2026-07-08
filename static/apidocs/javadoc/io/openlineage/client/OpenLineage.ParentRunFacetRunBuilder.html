@@ -121,8 +121,11 @@ implements <a href="OpenLineage.Builder.html" title="interface in io.openlineage
 <div class="block">build an instance of ParentRunFacetRun from the fields set in the builder</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OpenLineage.ParentRunFacetRunBuilder.html" title="class in io.openlineage.client">OpenLineage.ParentRunFacetRunBuilder</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#runId(java.util.UUID)" class="member-name-link">runId</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;runId)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#facets(io.openlineage.client.OpenLineage.ParentRunFacetRunFacets)" class="member-name-link">facets</a><wbr>(<a href="OpenLineage.ParentRunFacetRunFacets.html" title="class in io.openlineage.client">OpenLineage.ParentRunFacetRunFacets</a>&nbsp;facets)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="OpenLineage.ParentRunFacetRunBuilder.html" title="class in io.openlineage.client">OpenLineage.ParentRunFacetRunBuilder</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#runId(java.util.UUID)" class="member-name-link">runId</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&nbsp;runId)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -161,6 +164,18 @@ implements <a href="OpenLineage.Builder.html" title="interface in io.openlineage
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>runId</code> - The globally unique ID of the run associated with the job.</dd>
+<dt>Returns:</dt>
+<dd>this</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="facets(io.openlineage.client.OpenLineage.ParentRunFacetRunFacets)">
+<h3>facets</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="OpenLineage.ParentRunFacetRunBuilder.html" title="class in io.openlineage.client">OpenLineage.ParentRunFacetRunBuilder</a></span>&nbsp;<span class="element-name">facets</span><wbr><span class="parameters">(<a href="OpenLineage.ParentRunFacetRunFacets.html" title="class in io.openlineage.client">OpenLineage.ParentRunFacetRunFacets</a>&nbsp;facets)</span></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>facets</code> - Selected subset of facets of the parent run (not the current run), forwarded here for convenience. See the parent run's own event for full information.</dd>
 <dt>Returns:</dt>
 <dd>this</dd>
 </dl>
