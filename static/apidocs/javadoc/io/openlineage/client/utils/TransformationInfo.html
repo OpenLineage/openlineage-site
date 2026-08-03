@@ -140,6 +140,19 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Method that simplifies the creation of <a href="TransformationInfo.html" title="class in io.openlineage.client.utils"><code>TransformationInfo</code></a> object representing <a href="TransformationInfo.Types.html#DIRECT"><code>TransformationInfo.Types.DIRECT</code></a>, <a href="TransformationInfo.Subtypes.html#AGGREGATION"><code>TransformationInfo.Subtypes.AGGREGATION</code></a> transformation.</div>
 </div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#aggregation(java.lang.String)" class="member-name-link">aggregation</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;description)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Method that simplifies the creation of <a href="TransformationInfo.html" title="class in io.openlineage.client.utils"><code>TransformationInfo</code></a> object representing
+ non-masking, <a href="TransformationInfo.Types.html#DIRECT"><code>TransformationInfo.Types.DIRECT</code></a>, <a href="TransformationInfo.Subtypes.html#AGGREGATION"><code>TransformationInfo.Subtypes.AGGREGATION</code></a> transformation with a
+ description.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#aggregation(java.lang.String,java.lang.Boolean)" class="member-name-link">aggregation</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;description,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&nbsp;isMasking)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Method that simplifies the creation of <a href="TransformationInfo.html" title="class in io.openlineage.client.utils"><code>TransformationInfo</code></a> object representing <a href="TransformationInfo.Types.html#DIRECT"><code>TransformationInfo.Types.DIRECT</code></a>, <a href="TransformationInfo.Subtypes.html#AGGREGATION"><code>TransformationInfo.Subtypes.AGGREGATION</code></a> transformation with a description.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#equals(java.lang.Object)" class="member-name-link">equals</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;o)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
@@ -164,19 +177,42 @@ loadScripts(document, 'script');</script>
 <div class="block">Method that simplifies the creation of an <a href="TransformationInfo.html" title="class in io.openlineage.client.utils"><code>TransformationInfo</code></a> object representing <a href="TransformationInfo.Types.html#DIRECT"><code>TransformationInfo.Types.DIRECT</code></a>, <a href="TransformationInfo.Subtypes.html#IDENTITY"><code>TransformationInfo.Subtypes.IDENTITY</code></a> transformation.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#indirect(io.openlineage.client.utils.TransformationInfo.Subtypes)" class="member-name-link">indirect</a><wbr>(<a href="TransformationInfo.Subtypes.html" title="enum class in io.openlineage.client.utils">TransformationInfo.Subtypes</a>&nbsp;subType)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#identity(java.lang.String)" class="member-name-link">identity</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;description)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Method that simplifies the creation of an <a href="TransformationInfo.html" title="class in io.openlineage.client.utils"><code>TransformationInfo</code></a> object representing <a href="TransformationInfo.Types.html#DIRECT"><code>TransformationInfo.Types.DIRECT</code></a>, <a href="TransformationInfo.Subtypes.html#IDENTITY"><code>TransformationInfo.Subtypes.IDENTITY</code></a> transformation with a description.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#indirect(io.openlineage.client.utils.TransformationInfo.Subtypes)" class="member-name-link">indirect</a><wbr>(<a href="TransformationInfo.Subtypes.html" title="enum class in io.openlineage.client.utils">TransformationInfo.Subtypes</a>&nbsp;subType)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Method that simplifies the creation of <a href="TransformationInfo.html" title="class in io.openlineage.client.utils"><code>TransformationInfo</code></a> object representing
  non-masking, <a href="TransformationInfo.Types.html#INDIRECT"><code>TransformationInfo.Types.INDIRECT</code></a> transformation.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#indirect(io.openlineage.client.utils.TransformationInfo.Subtypes,java.lang.Boolean)" class="member-name-link">indirect</a><wbr>(<a href="TransformationInfo.Subtypes.html" title="enum class in io.openlineage.client.utils">TransformationInfo.Subtypes</a>&nbsp;subType,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#indirect(io.openlineage.client.utils.TransformationInfo.Subtypes,java.lang.Boolean)" class="member-name-link">indirect</a><wbr>(<a href="TransformationInfo.Subtypes.html" title="enum class in io.openlineage.client.utils">TransformationInfo.Subtypes</a>&nbsp;subType,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&nbsp;isMasking)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Method that simplifies the creation of <a href="TransformationInfo.html" title="class in io.openlineage.client.utils"><code>TransformationInfo</code></a> object representing <a href="TransformationInfo.Types.html#INDIRECT"><code>TransformationInfo.Types.INDIRECT</code></a> transformation.</div>
 </div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#indirect(io.openlineage.client.utils.TransformationInfo.Subtypes,java.lang.String)" class="member-name-link">indirect</a><wbr>(<a href="TransformationInfo.Subtypes.html" title="enum class in io.openlineage.client.utils">TransformationInfo.Subtypes</a>&nbsp;subType,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;description)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Method that simplifies the creation of <a href="TransformationInfo.html" title="class in io.openlineage.client.utils"><code>TransformationInfo</code></a> object representing
+ non-masking, <a href="TransformationInfo.Types.html#INDIRECT"><code>TransformationInfo.Types.INDIRECT</code></a> transformation with a description.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#indirect(io.openlineage.client.utils.TransformationInfo.Subtypes,java.lang.String,java.lang.Boolean)" class="member-name-link">indirect</a><wbr>(<a href="TransformationInfo.Subtypes.html" title="enum class in io.openlineage.client.utils">TransformationInfo.Subtypes</a>&nbsp;subType,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;description,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&nbsp;isMasking)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Method that simplifies the creation of <a href="TransformationInfo.html" title="class in io.openlineage.client.utils"><code>TransformationInfo</code></a> object representing <a href="TransformationInfo.Types.html#INDIRECT"><code>TransformationInfo.Types.INDIRECT</code></a> transformation with a description.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#merge(io.openlineage.client.utils.TransformationInfo)" class="member-name-link">merge</a><wbr>(<a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a>&nbsp;another)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#merge(io.openlineage.client.utils.TransformationInfo)" class="member-name-link">merge</a><wbr>(<a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a>&nbsp;another)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#merge(io.openlineage.client.utils.TransformationInfo,java.util.function.BinaryOperator)" class="member-name-link">merge</a><wbr>(<a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a>&nbsp;another,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/BinaryOperator.html" title="class or interface in java.util.function" class="external-link">BinaryOperator</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;descriptionMerger)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Merges current <a href="TransformationInfo.html" title="class in io.openlineage.client.utils"><code>TransformationInfo</code></a> with another e.g.</div>
 </div>
@@ -196,6 +232,24 @@ loadScripts(document, 'script');</script>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#transformation(java.lang.Boolean)" class="member-name-link">transformation</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&nbsp;isMasking)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Method that simplifies the creation of <a href="TransformationInfo.html" title="class in io.openlineage.client.utils"><code>TransformationInfo</code></a> object representing <a href="TransformationInfo.Types.html#DIRECT"><code>TransformationInfo.Types.DIRECT</code></a>, <a href="TransformationInfo.Subtypes.html#TRANSFORMATION"><code>TransformationInfo.Subtypes.TRANSFORMATION</code></a> transformation.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#transformation(java.lang.String)" class="member-name-link">transformation</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;description)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Method that simplifies the creation of <a href="TransformationInfo.html" title="class in io.openlineage.client.utils"><code>TransformationInfo</code></a> object representing
+ non-masking, <a href="TransformationInfo.Types.html#DIRECT"><code>TransformationInfo.Types.DIRECT</code></a>, <a href="TransformationInfo.Subtypes.html#TRANSFORMATION"><code>TransformationInfo.Subtypes.TRANSFORMATION</code></a> transformation with a
+ description.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#transformation(java.lang.String,java.lang.Boolean)" class="member-name-link">transformation</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;description,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&nbsp;isMasking)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Method that simplifies the creation of <a href="TransformationInfo.html" title="class in io.openlineage.client.utils"><code>TransformationInfo</code></a> object representing <a href="TransformationInfo.Types.html#DIRECT"><code>TransformationInfo.Types.DIRECT</code></a>, <a href="TransformationInfo.Subtypes.html#TRANSFORMATION"><code>TransformationInfo.Subtypes.TRANSFORMATION</code></a> transformation with a description.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#withDescription(java.lang.String)" class="member-name-link">withDescription</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;description)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns a <a href="TransformationInfo.html" title="class in io.openlineage.client.utils"><code>TransformationInfo</code></a> identical to this one, except for the description.</div>
 </div>
 </div>
 </div>
@@ -239,6 +293,17 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
+<section class="detail" id="identity(java.lang.String)">
+<h3>identity</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a></span>&nbsp;<span class="element-name">identity</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;description)</span></div>
+<div class="block">Method that simplifies the creation of an <a href="TransformationInfo.html" title="class in io.openlineage.client.utils"><code>TransformationInfo</code></a> object representing <a href="TransformationInfo.Types.html#DIRECT"><code>TransformationInfo.Types.DIRECT</code></a>, <a href="TransformationInfo.Subtypes.html#IDENTITY"><code>TransformationInfo.Subtypes.IDENTITY</code></a> transformation with a description.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>description</code> - - description of the transformation</dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="transformation()">
 <h3>transformation</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a></span>&nbsp;<span class="element-name">transformation</span>()</div>
@@ -258,6 +323,32 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
+<section class="detail" id="transformation(java.lang.String)">
+<h3>transformation</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a></span>&nbsp;<span class="element-name">transformation</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;description)</span></div>
+<div class="block">Method that simplifies the creation of <a href="TransformationInfo.html" title="class in io.openlineage.client.utils"><code>TransformationInfo</code></a> object representing
+ non-masking, <a href="TransformationInfo.Types.html#DIRECT"><code>TransformationInfo.Types.DIRECT</code></a>, <a href="TransformationInfo.Subtypes.html#TRANSFORMATION"><code>TransformationInfo.Subtypes.TRANSFORMATION</code></a> transformation with a
+ description.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>description</code> - - description of the transformation</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="transformation(java.lang.String,java.lang.Boolean)">
+<h3>transformation</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a></span>&nbsp;<span class="element-name">transformation</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;description,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&nbsp;isMasking)</span></div>
+<div class="block">Method that simplifies the creation of <a href="TransformationInfo.html" title="class in io.openlineage.client.utils"><code>TransformationInfo</code></a> object representing <a href="TransformationInfo.Types.html#DIRECT"><code>TransformationInfo.Types.DIRECT</code></a>, <a href="TransformationInfo.Subtypes.html#TRANSFORMATION"><code>TransformationInfo.Subtypes.TRANSFORMATION</code></a> transformation with a description.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>description</code> - - description of the transformation</dd>
+<dd><code>isMasking</code> - - is transformation masking</dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="aggregation()">
 <h3>aggregation</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a></span>&nbsp;<span class="element-name">aggregation</span>()</div>
@@ -272,6 +363,32 @@ loadScripts(document, 'script');</script>
 <div class="block">Method that simplifies the creation of <a href="TransformationInfo.html" title="class in io.openlineage.client.utils"><code>TransformationInfo</code></a> object representing <a href="TransformationInfo.Types.html#DIRECT"><code>TransformationInfo.Types.DIRECT</code></a>, <a href="TransformationInfo.Subtypes.html#AGGREGATION"><code>TransformationInfo.Subtypes.AGGREGATION</code></a> transformation.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
+<dd><code>isMasking</code> - - is transformation masking</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="aggregation(java.lang.String)">
+<h3>aggregation</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a></span>&nbsp;<span class="element-name">aggregation</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;description)</span></div>
+<div class="block">Method that simplifies the creation of <a href="TransformationInfo.html" title="class in io.openlineage.client.utils"><code>TransformationInfo</code></a> object representing
+ non-masking, <a href="TransformationInfo.Types.html#DIRECT"><code>TransformationInfo.Types.DIRECT</code></a>, <a href="TransformationInfo.Subtypes.html#AGGREGATION"><code>TransformationInfo.Subtypes.AGGREGATION</code></a> transformation with a
+ description.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>description</code> - - description of the transformation</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="aggregation(java.lang.String,java.lang.Boolean)">
+<h3>aggregation</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a></span>&nbsp;<span class="element-name">aggregation</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;description,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&nbsp;isMasking)</span></div>
+<div class="block">Method that simplifies the creation of <a href="TransformationInfo.html" title="class in io.openlineage.client.utils"><code>TransformationInfo</code></a> object representing <a href="TransformationInfo.Types.html#DIRECT"><code>TransformationInfo.Types.DIRECT</code></a>, <a href="TransformationInfo.Subtypes.html#AGGREGATION"><code>TransformationInfo.Subtypes.AGGREGATION</code></a> transformation with a description.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>description</code> - - description of the transformation</dd>
 <dd><code>isMasking</code> - - is transformation masking</dd>
 </dl>
 </section>
@@ -303,6 +420,48 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
+<section class="detail" id="indirect(io.openlineage.client.utils.TransformationInfo.Subtypes,java.lang.String)">
+<h3>indirect</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a></span>&nbsp;<span class="element-name">indirect</span><wbr><span class="parameters">(<a href="TransformationInfo.Subtypes.html" title="enum class in io.openlineage.client.utils">TransformationInfo.Subtypes</a>&nbsp;subType,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;description)</span></div>
+<div class="block">Method that simplifies the creation of <a href="TransformationInfo.html" title="class in io.openlineage.client.utils"><code>TransformationInfo</code></a> object representing
+ non-masking, <a href="TransformationInfo.Types.html#INDIRECT"><code>TransformationInfo.Types.INDIRECT</code></a> transformation with a description.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>subType</code> - - the subtype of the transformation viable subtypes: <a href="TransformationInfo.Subtypes.html#CONDITIONAL"><code>TransformationInfo.Subtypes.CONDITIONAL</code></a>,<a href="TransformationInfo.Subtypes.html#SORT"><code>TransformationInfo.Subtypes.SORT</code></a>,<a href="TransformationInfo.Subtypes.html#GROUP_BY"><code>TransformationInfo.Subtypes.GROUP_BY</code></a>,<a href="TransformationInfo.Subtypes.html#JOIN"><code>TransformationInfo.Subtypes.JOIN</code></a>,<a href="TransformationInfo.Subtypes.html#FILTER"><code>TransformationInfo.Subtypes.FILTER</code></a>,</dd>
+<dd><code>description</code> - - description of the transformation</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="indirect(io.openlineage.client.utils.TransformationInfo.Subtypes,java.lang.String,java.lang.Boolean)">
+<h3>indirect</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a></span>&nbsp;<span class="element-name">indirect</span><wbr><span class="parameters">(<a href="TransformationInfo.Subtypes.html" title="enum class in io.openlineage.client.utils">TransformationInfo.Subtypes</a>&nbsp;subType,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;description,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&nbsp;isMasking)</span></div>
+<div class="block">Method that simplifies the creation of <a href="TransformationInfo.html" title="class in io.openlineage.client.utils"><code>TransformationInfo</code></a> object representing <a href="TransformationInfo.Types.html#INDIRECT"><code>TransformationInfo.Types.INDIRECT</code></a> transformation with a description.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>subType</code> - - the subtype of the transformation viable subtypes: <a href="TransformationInfo.Subtypes.html#CONDITIONAL"><code>TransformationInfo.Subtypes.CONDITIONAL</code></a>,<a href="TransformationInfo.Subtypes.html#SORT"><code>TransformationInfo.Subtypes.SORT</code></a>,<a href="TransformationInfo.Subtypes.html#GROUP_BY"><code>TransformationInfo.Subtypes.GROUP_BY</code></a>,<a href="TransformationInfo.Subtypes.html#JOIN"><code>TransformationInfo.Subtypes.JOIN</code></a>,<a href="TransformationInfo.Subtypes.html#FILTER"><code>TransformationInfo.Subtypes.FILTER</code></a>,</dd>
+<dd><code>description</code> - - description of the transformation</dd>
+<dd><code>isMasking</code> - - is transformation masking (no indirect transformation is masking, but their
+     dependencies can be)</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="withDescription(java.lang.String)">
+<h3>withDescription</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a></span>&nbsp;<span class="element-name">withDescription</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;description)</span></div>
+<div class="block">Returns a <a href="TransformationInfo.html" title="class in io.openlineage.client.utils"><code>TransformationInfo</code></a> identical to this one, except for the description. Returns
+ <code>this</code> when the description is already equal, so cached instances are preserved.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>description</code> - - description of the transformation</dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="equals(java.lang.Object)">
 <h3>equals</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">equals</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;o)</span></div>
@@ -323,9 +482,10 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="merge(io.openlineage.client.utils.TransformationInfo)">
+<section class="detail" id="merge(io.openlineage.client.utils.TransformationInfo,java.util.function.BinaryOperator)">
 <h3>merge</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a></span>&nbsp;<span class="element-name">merge</span><wbr><span class="parameters">(<a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a>&nbsp;another)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a></span>&nbsp;<span class="element-name">merge</span><wbr><span class="parameters">(<a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a>&nbsp;another,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/BinaryOperator.html" title="class or interface in java.util.function" class="external-link">BinaryOperator</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;descriptionMerger)</span></div>
 <div class="block">Merges current <a href="TransformationInfo.html" title="class in io.openlineage.client.utils"><code>TransformationInfo</code></a> with another e.g. given two dependencies with
  transformation types a -> b, t1 and b -> c, t2 the result of merge is transformation type for
  dependency a -> c
@@ -341,6 +501,12 @@ loadScripts(document, 'script');</script>
 <dt>Parameters:</dt>
 <dd><code>another</code> - - <a href="TransformationInfo.html" title="class in io.openlineage.client.utils"><code>TransformationInfo</code></a> object to be merged with</dd>
 </dl>
+</section>
+</li>
+<li>
+<section class="detail" id="merge(io.openlineage.client.utils.TransformationInfo)">
+<h3>merge</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a></span>&nbsp;<span class="element-name">merge</span><wbr><span class="parameters">(<a href="TransformationInfo.html" title="class in io.openlineage.client.utils">TransformationInfo</a>&nbsp;another)</span></div>
 </section>
 </li>
 <li>
