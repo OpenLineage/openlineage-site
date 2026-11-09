@@ -81,13 +81,13 @@ loadScripts(document, 'script');</script>
 <div class="block">How OpenLineage names tables in Microsoft Fabric warehouses.
 
  <p>Each Fabric workspace has one SQL address that all its warehouses share, for example <code>
- 6obaxtbopqfublwdicr5oicqlm-ac4ezc2eudhehd3wgnlpocnuna.datawarehouse.fabric.microsoft.com</code>. A
+ ck32i2hmt2qeziwtnklnft2ptq-hnd7nul2t5jehfalvdluiyot7q.datawarehouse.fabric.microsoft.com</code>. A
  table is named <code>fabric-warehouse://&lt;address&gt;</code> plus <code>&lt;warehouse&gt;.&lt;schema&gt;.&lt;table&gt;</code>.
 
  <p>Some of what this class relies on isn't documented by Microsoft: how the address is built from
  the tenant and workspace IDs, and the option names that Microsoft's Spark connector for Fabric
- uses. All of it is kept in this class, and the tests check it against addresses taken from real
- workspaces, so a change on Microsoft's side only needs fixing here.</div>
+ uses. All of it is kept in this class, and was checked against real workspaces, so a change on
+ Microsoft's side only needs fixing here.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -165,18 +165,23 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Reads an ID, returning empty instead of failing when the text isn't a valid ID.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="DatasetIdentifier.html" title="class in io.openlineage.client.utils">DatasetIdentifier</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#withOneLakeLocation(io.openlineage.client.utils.DatasetIdentifier,java.util.Optional,java.util.Optional,java.util.Optional)" class="member-name-link">withOneLakeLocation</a><wbr>(<a href="DatasetIdentifier.html" title="class in io.openlineage.client.utils">DatasetIdentifier</a>&nbsp;identifier,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="OneLakeLocation.html" title="class in io.openlineage.client.utils">OneLakeLocation</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#toOneLakeLocation(io.openlineage.client.utils.DatasetIdentifier)" class="member-name-link">toOneLakeLocation</a><wbr>(<a href="DatasetIdentifier.html" title="class in io.openlineage.client.utils">DatasetIdentifier</a>&nbsp;identifier)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Describes a Fabric warehouse table in OneLake terms, for the <code>fabric_onelake</code> facet.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="DatasetIdentifier.html" title="class in io.openlineage.client.utils">DatasetIdentifier</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#withOneLakeLocation(io.openlineage.client.utils.DatasetIdentifier,java.util.Optional,java.util.Optional,java.util.Optional)" class="member-name-link">withOneLakeLocation</a><wbr>(<a href="DatasetIdentifier.html" title="class in io.openlineage.client.utils">DatasetIdentifier</a>&nbsp;identifier,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;idWarehouse,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;workspaceIdOption,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;warehouseIdOption)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Adds the table's OneLake file location to a Fabric warehouse dataset, as a <code>LOCATION</code>
  symlink.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#workspaceIdOf(java.lang.String)" class="member-name-link">workspaceIdOf</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;endpoint)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#workspaceIdOf(java.lang.String)" class="member-name-link">workspaceIdOf</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;endpoint)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Reads the workspace ID back out of a Fabric SQL address.</div>
 </div>
 </div>
@@ -334,9 +339,9 @@ loadScripts(document, 'script');</script>
        <code>=</code> padding.
  </ol>
 
- <p>For example, tenant <code>cc0b82f3-7c2e-400b-aec3-40a3d720505b</code> and workspace <code>
- 8b4cb800-a044-43ce-8f76-3356f709b468</code> give <code>
- 6obaxtbopqfublwdicr5oicqlm-ac4ezc2eudhehd3wgnlpocnuna.datawarehouse.fabric.microsoft.com</code>.
+ <p>For example, tenant <code>68a4b712-9eec-4ca0-a2d3-6a96d2cf4f9c</code> and workspace <code>
+ d1f6473b-9f7a-4352-940b-a8d74461d3fc</code> give <code>
+ ck32i2hmt2qeziwtnklnft2ptq-hnd7nul2t5jehfalvdluiyot7q.datawarehouse.fabric.microsoft.com</code>.
 
  <p>Microsoft doesn't document this. In November 2026 it matched the real addresses of 2 test
  workspaces and 44 public tenants, and Microsoft's own <code>fabric-warehouse-labs</code> samples
@@ -384,14 +389,20 @@ loadScripts(document, 'script');</script>
  read tables from several warehouses in the same workspace. So the location is only added to
  tables in the warehouse the ID was given for; other tables would get a wrong path.
 
+ <p>The workspace is the one in the SQL address, because that is what was queried, and the
+ dataset's name says so; <a href="#toOneLakeLocation(io.openlineage.client.utils.DatasetIdentifier)"><code>toOneLakeLocation(io.openlineage.client.utils.DatasetIdentifier)</code></a> uses the same rule. If the address has no
+ workspace, no location is added. If the <code>WorkspaceId</code> option names another workspace, or
+ isn't a valid ID, the IDs can't be trusted to belong together and no location is added either.
+ When the address is built from the tenant and the <code>WorkspaceId</code> option, as for <code>
+ synapsesql</code> writes, the two always agree.
+
  <p>If anything is missing, the table is in another warehouse, or an ID isn't valid, the dataset
  is returned as it was.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>identifier</code> - a <code>fabric-warehouse</code> dataset named <code>&lt;warehouse&gt;.&lt;schema&gt;.&lt;table&gt;</code></dd>
 <dd><code>idWarehouse</code> - name of the warehouse that <code>warehouseIdOption</code> belongs to</dd>
-<dd><code>workspaceIdOption</code> - the <code>WorkspaceId</code> option; if not set, the workspace ID is read
-     from the address</dd>
+<dd><code>workspaceIdOption</code> - the <code>WorkspaceId</code> option; must match the address's workspace</dd>
 <dd><code>warehouseIdOption</code> - the <code>DatawarehouseId</code> option</dd>
 <dt>Returns:</dt>
 <dd>the same dataset, with the location added when possible</dd>
@@ -399,10 +410,35 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
+<section class="detail" id="toOneLakeLocation(io.openlineage.client.utils.DatasetIdentifier)">
+<h3>toOneLakeLocation</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="OneLakeLocation.html" title="class in io.openlineage.client.utils">OneLakeLocation</a>&gt;</span>&nbsp;<span class="element-name">toOneLakeLocation</span><wbr><span class="parameters">(<a href="DatasetIdentifier.html" title="class in io.openlineage.client.utils">DatasetIdentifier</a>&nbsp;identifier)</span></div>
+<div class="block">Describes a Fabric warehouse table in OneLake terms, for the <code>fabric_onelake</code> facet.
+
+ <p>Everything comes from the dataset itself, never from the Spark session, because a table can
+ be in another workspace than the one the job runs in:
+
+ <ul>
+   <li>the item type is <code>Warehouse</code> and the item name is the warehouse;
+   <li>the workspace ID is read from the SQL address;
+   <li>the warehouse ID and the table's location come from the <code>LOCATION</code> symlink that
+       <a href="#withOneLakeLocation(io.openlineage.client.utils.DatasetIdentifier,java.util.Optional,java.util.Optional,java.util.Optional)"><code>withOneLakeLocation(io.openlineage.client.utils.DatasetIdentifier, java.util.Optional&lt;java.lang.String&gt;, java.util.Optional&lt;java.lang.String&gt;, java.util.Optional&lt;java.lang.String&gt;)</code></a> adds, and only if that symlink is in the same workspace as
+       the address.
+ </ul></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>identifier</code> - a dataset, possibly with symlinks</dd>
+<dt>Returns:</dt>
+<dd>the description, or empty if this isn't a <code>fabric-warehouse</code> dataset named <code>
+     &lt;warehouse&gt;.&lt;schema&gt;.&lt;table&gt;</code></dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="parseGuid(java.lang.String)">
 <h3>parseGuid</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html" title="class or interface in java.util" class="external-link">Optional</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a>&gt;</span>&nbsp;<span class="element-name">parseGuid</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;value)</span></div>
-<div class="block">Reads an ID, returning empty instead of failing when the text isn't a valid ID.</div>
+<div class="block">Reads an ID, returning empty instead of failing when the text isn't a valid ID. Same as <a href="OneLakeLocation.html#guid(java.lang.String)"><code>OneLakeLocation.guid(java.lang.String)</code></a>: only the full 36-character form is accepted.</div>
 </section>
 </li>
 </ul>
