@@ -119,13 +119,21 @@ implements <a href="JdbcExtractor.html" title="interface in io.openlineage.clien
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="JdbcLocation.html" title="class in io.openlineage.client.utils.jdbc">JdbcLocation</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#extract(java.lang.String,java.util.Properties)" class="member-name-link">extract</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;rawUri,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../DatasetIdentifier.html" title="class in io.openlineage.client.utils">DatasetIdentifier</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#enrich(io.openlineage.client.utils.DatasetIdentifier,io.openlineage.client.utils.jdbc.JdbcLocation,java.util.Properties)" class="member-name-link">enrich</a><wbr>(<a href="../DatasetIdentifier.html" title="class in io.openlineage.client.utils">DatasetIdentifier</a>&nbsp;identifier,
+ <a href="JdbcLocation.html" title="class in io.openlineage.client.utils.jdbc">JdbcLocation</a>&nbsp;location,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Properties.html" title="class or interface in java.util" class="external-link">Properties</a>&nbsp;properties)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isDefinedAt(java.lang.String)" class="member-name-link">isDefinedAt</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;jdbcUri)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Adds the location of the table's files in OneLake, when the read comes from Microsoft's Spark
+ connector for Fabric and the user set the warehouse ID (<code>DatawarehouseId</code>); see <a href="../FabricWarehouseUtils.html#withOneLakeLocation(io.openlineage.client.utils.DatasetIdentifier,java.util.Optional,java.util.Optional,java.util.Optional)"><code>FabricWarehouseUtils.withOneLakeLocation(io.openlineage.client.utils.DatasetIdentifier, java.util.Optional&lt;java.lang.String&gt;, java.util.Optional&lt;java.lang.String&gt;, java.util.Optional&lt;java.lang.String&gt;)</code></a>.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="JdbcLocation.html" title="class in io.openlineage.client.utils.jdbc">JdbcLocation</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#extract(java.lang.String,java.util.Properties)" class="member-name-link">extract</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;rawUri,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Properties.html" title="class or interface in java.util" class="external-link">Properties</a>&nbsp;properties)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isDefinedAt(java.lang.String)" class="member-name-link">isDefinedAt</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;jdbcUri)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -178,6 +186,30 @@ implements <a href="JdbcExtractor.html" title="interface in io.openlineage.clien
 <dd><code><a href="JdbcExtractor.html#extract(java.lang.String,java.util.Properties)">extract</a></code>&nbsp;in interface&nbsp;<code><a href="JdbcExtractor.html" title="interface in io.openlineage.client.utils.jdbc">JdbcExtractor</a></code></dd>
 <dt>Throws:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URISyntaxException.html" title="class or interface in java.net" class="external-link">URISyntaxException</a></code></dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="enrich(io.openlineage.client.utils.DatasetIdentifier,io.openlineage.client.utils.jdbc.JdbcLocation,java.util.Properties)">
+<h3>enrich</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../DatasetIdentifier.html" title="class in io.openlineage.client.utils">DatasetIdentifier</a></span>&nbsp;<span class="element-name">enrich</span><wbr><span class="parameters">(<a href="../DatasetIdentifier.html" title="class in io.openlineage.client.utils">DatasetIdentifier</a>&nbsp;identifier,
+ <a href="JdbcLocation.html" title="class in io.openlineage.client.utils.jdbc">JdbcLocation</a>&nbsp;location,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Properties.html" title="class or interface in java.util" class="external-link">Properties</a>&nbsp;properties)</span></div>
+<div class="block">Adds the location of the table's files in OneLake, when the read comes from Microsoft's Spark
+ connector for Fabric and the user set the warehouse ID (<code>DatawarehouseId</code>); see <a href="../FabricWarehouseUtils.html#withOneLakeLocation(io.openlineage.client.utils.DatasetIdentifier,java.util.Optional,java.util.Optional,java.util.Optional)"><code>FabricWarehouseUtils.withOneLakeLocation(io.openlineage.client.utils.DatasetIdentifier, java.util.Optional&lt;java.lang.String&gt;, java.util.Optional&lt;java.lang.String&gt;, java.util.Optional&lt;java.lang.String&gt;)</code></a>.
+
+ <p>The ID is for the warehouse the query runs in: the connector's <code>database_name</code> option,
+ or else the database in the URL. A query can also read from other warehouses in the same
+ workspace. Their tables don't get a location, because their IDs aren't known.</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="JdbcExtractor.html#enrich(io.openlineage.client.utils.DatasetIdentifier,io.openlineage.client.utils.jdbc.JdbcLocation,java.util.Properties)">enrich</a></code>&nbsp;in interface&nbsp;<code><a href="JdbcExtractor.html" title="interface in io.openlineage.client.utils.jdbc">JdbcExtractor</a></code></dd>
+<dt>Parameters:</dt>
+<dd><code>identifier</code> - the dataset, named from <code>location</code></dd>
+<dd><code>location</code> - the location <a href="JdbcExtractor.html#extract(java.lang.String,java.util.Properties)"><code>JdbcExtractor.extract(java.lang.String, java.util.Properties)</code></a> returned</dd>
+<dd><code>properties</code> - the connection properties, which can include a connector's own options</dd>
+<dt>Returns:</dt>
+<dd>the dataset, by default unchanged</dd>
 </dl>
 </section>
 </li>

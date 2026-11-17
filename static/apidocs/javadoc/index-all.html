@@ -1443,6 +1443,16 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Builds a workspace's SQL address from its tenant ID and workspace ID.</div>
 </dd>
+<dt><a href="io/openlineage/client/utils/jdbc/FabricWarehouseJdbcExtractor.html#enrich(io.openlineage.client.utils.DatasetIdentifier,io.openlineage.client.utils.jdbc.JdbcLocation,java.util.Properties)" class="member-name-link">enrich(DatasetIdentifier, JdbcLocation, Properties)</a> - Method in class io.openlineage.client.utils.jdbc.<a href="io/openlineage/client/utils/jdbc/FabricWarehouseJdbcExtractor.html" title="class in io.openlineage.client.utils.jdbc">FabricWarehouseJdbcExtractor</a></dt>
+<dd>
+<div class="block">Adds the location of the table's files in OneLake, when the read comes from Microsoft's Spark
+ connector for Fabric and the user set the warehouse ID (<code>DatawarehouseId</code>); see <a href="io/openlineage/client/utils/FabricWarehouseUtils.html#withOneLakeLocation(io.openlineage.client.utils.DatasetIdentifier,java.util.Optional,java.util.Optional,java.util.Optional)"><code>FabricWarehouseUtils.withOneLakeLocation(io.openlineage.client.utils.DatasetIdentifier, java.util.Optional&lt;java.lang.String&gt;, java.util.Optional&lt;java.lang.String&gt;, java.util.Optional&lt;java.lang.String&gt;)</code></a>.</div>
+</dd>
+<dt><a href="io/openlineage/client/utils/jdbc/JdbcExtractor.html#enrich(io.openlineage.client.utils.DatasetIdentifier,io.openlineage.client.utils.jdbc.JdbcLocation,java.util.Properties)" class="member-name-link">enrich(DatasetIdentifier, JdbcLocation, Properties)</a> - Method in interface io.openlineage.client.utils.jdbc.<a href="io/openlineage/client/utils/jdbc/JdbcExtractor.html" title="interface in io.openlineage.client.utils.jdbc">JdbcExtractor</a></dt>
+<dd>
+<div class="block">Adds details from the connection properties to a dataset, such as a symlink to the location of
+ its files.</div>
+</dd>
 <dt><a href="io/openlineage/client/OpenLineage.LineageJobFacetBuilder.html#entries(java.util.List)" class="member-name-link">entries(List&lt;OpenLineage.LineageEntry&gt;)</a> - Method in class io.openlineage.client.<a href="io/openlineage/client/OpenLineage.LineageJobFacetBuilder.html" title="class in io.openlineage.client">OpenLineage.LineageJobFacetBuilder</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="io/openlineage/client/Environment.html" class="type-name-link" title="class in io.openlineage.client">Environment</a> - Class in <a href="io/openlineage/client/package-summary.html">io.openlineage.client</a></dt>
@@ -2766,11 +2776,6 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="io/openlineage/client/utils/jdbc/JdbcLocation.html#getDatabase()" class="member-name-link">getDatabase()</a> - Method in class io.openlineage.client.utils.jdbc.<a href="io/openlineage/client/utils/jdbc/JdbcLocation.html" title="class in io.openlineage.client.utils.jdbc">JdbcLocation</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="io/openlineage/client/utils/jdbc/JdbcDatasetUtils.html#getDatabase(java.lang.String,java.util.Properties)" class="member-name-link">getDatabase(String, Properties)</a> - Static method in class io.openlineage.client.utils.jdbc.<a href="io/openlineage/client/utils/jdbc/JdbcDatasetUtils.html" title="class in io.openlineage.client.utils.jdbc">JdbcDatasetUtils</a></dt>
-<dd>
-<div class="block">Get the database named in a JDBC URL or its properties, such as SQL Server's <code>
- databaseName</code>.</div>
-</dd>
 <dt><a href="io/openlineage/client/OpenLineage.InputDatasetInputFacets.html#getDataQualityAssertions()" class="member-name-link">getDataQualityAssertions()</a> - Method in class io.openlineage.client.<a href="io/openlineage/client/OpenLineage.InputDatasetInputFacets.html" title="class in io.openlineage.client">OpenLineage.InputDatasetInputFacets</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="io/openlineage/client/OpenLineage.DatasetFacets.html#getDataQualityMetrics()" class="member-name-link">getDataQualityMetrics()</a> - Method in class io.openlineage.client.<a href="io/openlineage/client/OpenLineage.DatasetFacets.html" title="class in io.openlineage.client">OpenLineage.DatasetFacets</a></dt>
